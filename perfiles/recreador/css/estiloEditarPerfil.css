@@ -56,25 +56,22 @@ header {
 	font-size: 18px;
 }
 
-/* --- Widget Estado --- */
-
-.main .estado .caja {
-	background: #fff;
-	border: 1px solid #e3e3e3;
-	padding: 16px 20px;
-	flex: 1;
-	text-align: center;
+.userpicture {
+	width: 120px;
+	height: 120px;
+	margin-bottom: 40px;
+	margin-left: 50px;
 }
 
-.main .estado .caja h4 {
-	margin-bottom: 2px;
-	color: #173b9e;
-}
+ 
+/* --- FOOTER --- */
 
-.main .estado .caja p {
-	color: #a8a8a8;
-	margin-bottom: 0;
+footer {
+	padding: 10px 0;
+	background: #173b9e;
+	color: #fff;
+	font-size: 18px;
+	padding: 4px 0px 0px 20px; 
 }
-
 
 
