@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="icon" type="text/css" href="img/icono.ico">
+	<link rel="stylesheet" href="css/estiloObservaciones.css">
+	<link rel="stylesheet" href="font/style.css">
+	<title>Observaciones</title>
+	
+</head>
+<body>
+	<div class="container-fluid">
+			<!-- HEADER -->
+		<header class="row">
+			<div class="logo col-11">
+				<img src="../recreador/img/logo.png" width="100" alt="Logo New Xperience">
+			</div>
+			<div class="col-1">
+				<nav class="nav salir">
+					<a href="#" class="nav-link active"> Salir </a>
+				</nav>
+			</div>
+		</header>
+			<!-- SIDEBAR -->
+		<div class="row mt-3">
+			<aside class="aside col-sm-4 col-md-auto">
+				
+				<nav id="sidebar" class="navbar d-flex d-sm-block justify-content-center flex-wrap mb-5">
+					<ul class="nav flex-column mb-0">
+						<li>
+							<p id="sidebartext">Perfil</p>
+						</li>
+						<li class="nav-item">
+							<a href="indexRecreador.html" class="nav-link active">Mi Perfil</a>
+						</li>
+						<li class="nav-item">
+							<a href="EditarPerfil.html" class="nav-link">Editar Perfil</a>
+						</li>
+					</ul>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<p id="sidebartext">Capacitaciones</p>
+						</li>
+						<li class="nav-item">
+							<a href="CapacitacionesAsignadas.html" class="nav-link">Asignadas</a>
+						</li>
+						<li class="nav-item">
+							<a href="HistorialCapacitaciones.html" class="nav-link">Historial</a>
+						</li>
+					</ul>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<p id="sidebartext">Eventos</p>
+						</li>
+						<li class="nav-item">
+							<a href="ConsultarEvento.html" class="nav-link">Consultar eventos</a>
+						</li>
+					</ul>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<p id="sidebartext">Reportes</p>
+						</li>	
+						<li class="nav-item">
+							<a href="Estadisticas.html" class="nav-link">Estadísticas</a>
+						</li>
+						<li class="nav-item">
+							<a href="Observaciones.html" class="nav-link">Observaciones</a>
+						</li>
+						<li class="nav-item">
+							<a href="Contrato.html" class="nav-link">Descargar contrato</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<!-- MAIN -->
+		<main class="main col">
+				<div class="section">
+						<div class="d-flex">
+							<div class="col-md-2 mt-4">
+									<img src="img/user.png" alt="user profile picture" class="userpicture">	
+							</div>
+							<div class="name col-md-6 mt-5">
+								<h3>Jose Angel Perez Molina</h3>
+								<p>RECREADOR</p>
+							</div>
+							<div class="columna col-md-4">
+								<div class="widget estado">
+									<div class="contenedor d-flex flex-wrap">
+										<div class="caja">
+											<h4>154</h4>
+											<p>Eventos realizados</p>
+										</div>
+										<div class="caja">
+											<h4>22</h4>
+											<p>Eventos pendientes</p>
+										</div>
+										<div class="caja">
+											<h4>Golden</h4>
+											<p>Rango</p>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>	
+						<div class="col-11">
+								<h4 class="tittleObservaciones mt-5 ml-5">OBSERVACIONES</h4>
+								<table class="table observaciones table-hover table-info table-responsive">
+									<thead>
+										<tr>
+											<th>Observación N°</th>
+											<th>Evento</th>
+											<th>Lugar</th>
+											<th>Fecha</th>
+											<th>Detalle</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>001</td>
+											<td>Mega Rumba</td>
+											<td>Calle 13 # 65-21</td>
+											<td>16/04/2017</td>
+											<td>
+												<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#detalle-modal">Ver</button>
+												<div class="modal fade" id="detalle-modal" tabindex="-1" role="dialog" aria-labelledby="detalle-modal" aria-hidden="true">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="">De: Marta Sanchez</h5>
+																<button class="close" data-dismiss="modal" aria-label="Cerrar">
+																	<span aria-hidden="true">&times;</span>
+																</button>
+															</div>
+
+															<div class="modal-body">
+																<h2>Asunto: Mega Rumba</h2>
+																<p>No solo han estado a la altura, sino por encima de las mejores de nuestras expectativas. Ángel es un fenómeno, conoce el oficio y sabe animar. ¡Gracias!</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>002</td>
+											<td>Baby Shower</td>
+											<td>Calle 52 # 12-21</td>
+											<td>22/05/2017</td>
+											<td>
+												<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#detalle2-modal">Ver</button>
+												<div class="modal fade" id="detalle2-modal" tabindex="-1" role="dialog" aria-labelledby="detalle2-modal" aria-hidden="true">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="">De: Laura Zapata</h5>
+																<button class="close" data-dismiss="modal" aria-label="Cerrar">
+																	<span aria-hidden="true">&times;</span>
+																</button>
+															</div>
+
+															<div class="modal-body">
+																<h2>Asunto: Baby Shower</h2>
+																<p>Un trabajo perfecto. Estuvieron pendientes de todo. Todo un éxito! Gracias por todos!</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>003</td>
+											<td>15 Años</td>
+											<td>Salon comunal Modelia</td>
+											<td>28/05/2017</td>
+											<td>
+												<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#detalle3-modal">Ver</button>
+												<div class="modal fade" id="detalle3-modal" tabindex="-1" role="dialog" aria-labelledby="detalle3-modal" aria-hidden="true">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="">De: Tatiana Gomez</h5>
+																<button class="close" data-dismiss="modal" aria-label="Cerrar">
+																	<span aria-hidden="true">&times;</span>
+																</button>
+															</div>
+
+															<div class="modal-body">
+																<h2>Asunto: 15 años</h2>
+																<p>David nuestro dj fue genial. Cercano, cariñoso, amable y buen profesional. Con Ángel es facilísimo comunicarse. Todo perfecto, volveríamos a escogerlos sin dudar.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>004</td>
+											<td>Viejoteca</td>
+											<td>Prado Veraniego</td>
+											<td>08/06/2017</td>
+											<td>
+												<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#detalle4-modal">Ver</button>
+												<div class="modal fade" id="detalle4-modal" tabindex="-1" role="dialog" aria-labelledby="detalle4-modal" aria-hidden="true">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="">De: Roberto Arias</h5>
+																<button class="close" data-dismiss="modal" aria-label="Cerrar">
+																	<span aria-hidden="true">&times;</span>
+																</button>
+															</div>
+
+															<div class="modal-body">
+																<h2>Asunto: Viejoteca</h2>
+																<p>Han sido estupendos, a nosotros particularmente Ángel, que fue muy atento y estuvo pendiente de las cosas que le pedimos y muy dispuesto y agradable. Nos quedamos encantados con el servicio.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>005</td>
+											<td>Fiesta Infantil</td>
+											<td>Calle 26 # 25-50</td>
+											<td>21/06/2017</td>
+											<td>
+												<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#detalle5-modal">Ver</button>
+												<div class="modal fade" id="detalle5-modal" tabindex="-1" role="dialog" aria-labelledby="detalle5-modal" aria-hidden="true">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="">De: Patricia Joya</h5>
+																<button class="close" data-dismiss="modal" aria-label="Cerrar">
+																	<span aria-hidden="true">&times;</span>
+																</button>
+															</div>
+
+															<div class="modal-body">
+																<h2>Asunto: Fiesta infantil</h2>
+																<p>Muy contentos con todo, un servicio espectacular y muy atentos con todo, y siempre atentos para poder echarte una mano en todo lo necesario.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>006</td>
+											<td>Baby Shower</td>
+											<td>Calle 52 # 25-50</td>
+											<td>21/07/2017</td>
+											<td>
+												<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#detalle6-modal">Ver</button>
+												<div class="modal fade" id="detalle6-modal" tabindex="-1" role="dialog" aria-labelledby="detalle6-modal" aria-hidden="true">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="">De: Luisa Morales</h5>
+																<button class="close" data-dismiss="modal" aria-label="Cerrar">
+																	<span aria-hidden="true">&times;</span>
+																</button>
+															</div>
+
+															<div class="modal-body">
+																<h2>Asunto: Baby Shower</h2>
+																<p>Nuestra experiencia con Nautas ha sido muy positiva. Trato cercano, disponibilidad total y aclaración de todas nuestras dudas previas al evento.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>007</td>
+											<td>15 años</td>
+											<td>Calle 17 H # 25-50</td>
+											<td>21/09/2017</td>
+											<td>
+												<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#detalle7-modal">Ver</button>
+												<div class="modal fade" id="detalle7-modal" tabindex="-1" role="dialog" aria-labelledby="detalle7-modal" aria-hidden="true">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="">De: Julian Bonilla</h5>
+																<button class="close" data-dismiss="modal" aria-label="Cerrar">
+																	<span aria-hidden="true">&times;</span>
+																</button>
+															</div>
+
+															<div class="modal-body">
+																<h2>Asunto: Fiesta infantil</h2>
+																<p>Desde el primer contacto han sido muy profesionales. Han desarrollado y ejecutado el trabajo a la perfección, nos ayudaron y aconsejaron muy bien. ¡Quedamos encantados con su trabajo!</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+								</table>
+						</div>					
+				</div>
+		</main>
+
+		</div>
+		<footer class="row">
+			<div id="contacto" class="col-4 mt-2">
+				<span class="icon-phone-hang-up"> 300 222 11 44 </span>
+			</div>
+			<div id="copy" class="col-7 mt-2"> 
+				<h5>
+					<p>Copyright (c) 2017 New Xperience. All Rights Reserved</p>
+				</h5>
+			</div>
+			<div id="iconos" class="col-1 mt-2">
+				<a fb href="#" class="icon-facebook2"></a> 
+			</div>
+		</footer>
+		
+	</div>
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+</body>
+</html>
