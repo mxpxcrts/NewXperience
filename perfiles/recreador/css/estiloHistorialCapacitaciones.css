@@ -61,43 +61,6 @@ header {
 	height: 120px;
 }
 
-
-/* --- Menu Acordeón --- */
-
-div.menuAcordeon{
-	width:600px;
-	min-height:50px;
-	background-color: #173b9e;
-	-webkit-transiton: height 0.2s;
-}
-
-div.titulo{
-	width:600px;
-	height:50px;
-	background-color: #173b9e;
-	overflow: hidden;
-	border-bottom: 1px solid #ffd635;
-}
-
-p.titulo{
-	margin:13px;
-	color: white;
-}
-
-div.info{
-	width:600px;
-	height:0px;
-	background-color: #f5f5f5;
-	overflow: hidden;
-	-webkit-transition: height 0.2s;
-}
-
-div.menuAcordeon:hover div.info{
-
-	height:200px;
-
-}
-
 /* --- Widget Estado --- */
 
 .main .estado .caja {
@@ -125,3 +88,5 @@ footer {
 	font-size: 18px;
 	padding: 4px 0px 0px 20px; 
 }
+
+
