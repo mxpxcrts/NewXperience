@@ -19,7 +19,7 @@
 			</div>
 			<div class="col-1">
 				<nav class="nav salir">
-					<a href="#" class="nav-link active"> Salir </a>
+					<a href="../../inicio.html" class="nav-link active"> Salir </a>
 				</nav>
 			</div>
 		</header>
@@ -78,93 +78,90 @@
 		<!-- MAIN -->
 
 		<main class="main col">
+			<div class="col jumbotron mt-3">
 				<div class="section col text-center mt-3 mb-5">
 					<h2>Actualizar Datos</h2>
 				</div>
-				<div class="col-12">
+				<div class=" userPhotoEdit col-6">
 					<img src="img/user.png" alt="user profile picture" class="userpicture">
 					<button id="fotoChange" class="btn-sm btn-primary mt-2 ml-5">Cambiar foto de perfil</button>
 				</div>
 
-				<div class="formu col-8 ml-2">
-					<form action="">
-						<div class="form-group">
-							<label for="nombres">Nombres</label>
-							<input type="text" class="form-control" placeholder="Nombres" name="nombres" id="nombres">
-						</div>
+				<form action="">
+						<fieldset class="form-group container ">
+							<hr>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="">Nombres:</label>
 
-						<div class="form-group">
-							<label for="apellidos">Apellidos</label>
-							<input type="text" class="form-control" placeholder="Apellidos" name="apellidos" id="apellidos">
-						</div>
+										<input type="text" class="form-control" id="" placeholder="Nombres">
+									</div>
+									<div class="form-group col-md-6">
+										<label for="">Apellidos:</label>
+										<input type="password" class="form-control" id="" placeholder="Apellidos">
+									</div>
+								</div>
 
-						<div class="form-check">
-							<label class="form-check-label">
-								<input type="radio" name="sexo" id="hombre" class="form-check-input mr-2">Hombre
-							</label>
-						</div>
-						<div class="form-check">
-							<label class="form-check-label">
-								<input type="radio" name="sexo" id="mujer" class="form-check-input mr-2">Mujer
-							</label>
-						</div>
+								<div class="form-row ">
+									<div class="form-group col-6 ">
+										<label for="">Teléfono:</label>
+										<input type="text" class="form-control" placeholder="Teléfono">
+									</div>
+									<div class="form-group col-6">
+										<label for="">Celular:</label>
+										<input type="text" class="form-control" placeholder=Celular>
+									</div>
+								</div>
 
-						<div class="form-group">
-							<label for="documentoTipo">Tipo de documento</label>
-							<select name="documentoTipo" id="documentoTipo" class="form-control">
-								<option value="C.C">C.C</option>
-								<option value="T.I">T.I</option>
-								<option value="C.E">C.E</option>
-							</select>
-						</div>
+								<div class="form-row ">
+									<div class="form-group col-6">
+										<label for="documentoTipo">Tipo de Documento</label>
+										<select name="documentoTipo" id="documentoTipo" class="form-control">
+											<option value="C.C">C.C</option>
+											<option value="T.I">T.I</option>
+											<option value="C.E">C.E</option>
+										</select>
+									</div>
+									<div class="form-group col-6 ">
+										<label for="">Número de Documento:</label>
+										<input type="text" class="form-control" placeholder="Número de Documento">
+									</div>
+								</div>
 
-						<div class="form-group">
-							<label for="numDocumento">Número de Documento</label>
-							<input type="text" class="form-control" placeholder="Número de Documento" name="numDocumento" id="numDocumento">
-						</div>
-
-						<div class="form-group">
-							<label for="correo">Correo electrónico</label>
-							<input type="text" class="form-control" placeholder="Correo electrónico" name="correo" id="correo">
-						</div>
-
-						<div class="form-group">
-							<label for="telf">Teléfono</label>
-							<input type="text" class="form-control" placeholder="Teléfono" name="telf" id="telf">
-						</div>
-
-						<div class="form-group">
-							<label for="cel">Celular</label>
-							<input type="text" class="form-control" placeholder="Celular" name="cel" id="cel">
-						</div>
-
-						<div class="form-group">
-							<label for="pass">Contraseña</label>
-							<input type="password" class="form-control" placeholder="Contraseña (max 20 caracteres)" name="pass" id="pass">
-						</div>
-
-						<div class="form-group">
-							<label for="confirmarpass">Confirmar contraseña</label>
-							<input type="password" class="form-control" placeholder="Confirmar contraseña (max 20 caracteres)" name="confirmarpass" id="confirmarpass">
-						</div>
-
-						<button class="btn btn-sm btn-block btn-primary mb-5" type="submit">Guardar</button>
+								<div class="form-row ">
+									<div class="form-group col-12 ">
+										<label for="">Correo electrónico:</label>
+										<input type="email" class="form-control" placeholder="Correo electrónico">
+									</div>
+									<div class="form-group col-12 ">
+										<label for="">Contraseña:</label>
+										<input type="password" class="form-control" placeholder="Contraseña (máx 20 caracteres)">
+									</div>
+									<div class="form-group col-12 ">
+										<label for="">Confirmar contraseña:</label>
+										<input type="password" class="form-control" placeholder="Confirmar contraseña (máx 20 caracteres)">
+									</div>
+									<button class="btn btn-info btn-sm btn-block">Guardar</button>
+								</div>
+						</fieldset>
 					</form>
-				</div>
+			</div>
 		</main>
 
 		</div>
+
+			<!-- Footer -->
+
 		<footer class="row">
-			<div id="contacto" class="col-4 mt-2">
-				<span class="icon-phone-hang-up"> 300 222 11 44 </span>
+			<div class="col">
+				<p class="lead m-0 text-center" >320 222 11 44</p >
 			</div>
-			<div id="copy" class="col-7 mt-2"> 
-				<h5>
-					<p>Copyright (c) 2017 New Xperience. All Rights Reserved</p>
-				</h5>
+			<div class="col-sm-6 col-md-8 ">
+				<p class="lead m-0 text-center" >Copyright @2017 New Xperience</p >
 			</div>
-			<div id="iconos" class="col-1 mt-2">
-				<a fb href="#" class="icon-facebook2"></a> 
+
+			<div class="col-sm-6 col-md-2 ">
+				<a fb href="#" class="icon-facebook d-inline-block iconF"></a>
 			</div>
 		</footer>
 		

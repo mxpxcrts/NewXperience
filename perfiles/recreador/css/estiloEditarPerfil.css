@@ -63,15 +63,23 @@ header {
 	margin-left: 50px;
 }
 
+.jumbotron  {
+	opacity: 0.9;
+}
+
  
 /* --- FOOTER --- */
 
-footer {
-	padding: 10px 0;
-	background: #173b9e;
-	color: #fff;
+.iconF{
+	margin-top: 6px;
+	margin-left: 25px;
 	font-size: 18px;
-	padding: 4px 0px 0px 20px; 
+	color: #fff;
 }
+footer {
+	background: #173b9e;
+	color: white;
+
+
 
 

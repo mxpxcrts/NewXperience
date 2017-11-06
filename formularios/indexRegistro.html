@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estiloRegistro.css">
+	<link rel="icon" type="text/css" href="img/icono.ico">
+	<title>Registro</title>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col section">
+				<div class="col-12 jumbotron mt-3">
+					<form action="">
+						<fieldset class="form-group container ">
+							<legend class="text-center">Registro</legend>
+							<hr>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="">Nombres:</label>
+
+										<input type="text" class="form-control" id="" placeholder="Nombres">
+									</div>
+									<div class="form-group col-md-6">
+										<label for="">Apellidos:</label>
+										<input type="password" class="form-control" id="" placeholder="Apellidos">
+									</div>
+								</div>
+
+								<div class="form-row ">
+									<div class="form-group col-6 ">
+										<label for="">Teléfono:</label>
+										<input type="text" class="form-control" placeholder="Teléfono">
+									</div>
+									<div class="form-group col-6">
+										<label for="">Celular:</label>
+										<input type="text" class="form-control" placeholder=Celular>
+									</div>
+								</div>
+
+								<div class="form-row ">
+									<div class="form-group col-6 ">
+										<label for="sexo">Sexo</label>
+										<select name="sexo" id="sexo" class="form-control">
+											<option value="Hombre">Hombre</option>
+											<option value="Mujer">Mujer</option>
+										</select>
+									</div>
+
+									<div class="form-group col-6">
+										<label for="documentoTipo">Tipo de Perfil</label>
+										<select name="tipoPerfil" id="tipoPerfil" class="form-control">
+											<option value="Cliente">Cliente</option>
+											<option value="Recreador">Recreador</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-row ">
+									<div class="form-group col-6">
+										<label for="documentoTipo">Tipo de Documento</label>
+										<select name="documentoTipo" id="documentoTipo" class="form-control">
+											<option value="C.C">C.C</option>
+											<option value="T.I">T.I</option>
+											<option value="C.E">C.E</option>
+										</select>
+									</div>
+									<div class="form-group col-6 ">
+										<label for="">Número de Documento:</label>
+										<input type="text" class="form-control" placeholder="Número de Documento">
+									</div>
+								</div>
+
+								<div class="form-row ">
+									<div class="form-group col-12 ">
+										<label for="">Correo electrónico:</label>
+										<input type="email" class="form-control" placeholder="Correo electrónico">
+									</div>
+									<div class="form-group col-12 ">
+										<label for="">Contraseña:</label>
+										<input type="password" class="form-control" placeholder="Contraseña (máx 20 caracteres)">
+									</div>
+									<div class="form-group col-12 ">
+										<label for="">Confirmar contraseña:</label>
+										<input type="password" class="form-control" placeholder="Confirmar contraseña (máx 20 caracteres)">
+									</div>
+									<button class="btn btn-success mr-4">Enviar</button>
+									<a href="../inicio.html" class="btn btn-info btn-hover" role="button" aria-pressed="true">Volver</a>
+								</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+</body>
+</html>

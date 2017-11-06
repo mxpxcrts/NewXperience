@@ -1,0 +1,31 @@
+*{
+	box-sizing: border-box;
+	margin: 0 ;
+	padding: 0;
+		
+}
+body {
+	background-image: url("../img/bgRegistro.jpeg");
+	background-size: 100% 120%;
+	background-attachment: fixed;
+}
+
+.jumbotron {
+	width: 900px;
+	height: 800px;
+	opacity: 0.8;
+}
+
+.section {
+	margin-left: 100px;
+}
+
+form{
+	font-family: "DancingScript-Regular";
+}
+
+@font-face{
+	font-family:"DancingScript-Regular";
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+

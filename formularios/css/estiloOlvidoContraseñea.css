@@ -1,0 +1,44 @@
+*{
+	box-sizing: border-box;
+	margin: 0 ;
+	padding: 0;
+		
+}
+ 
+ /* Principal*/
+body {
+	background-image: url("../img/bgOlvidoContraseña.jpeg");
+	background-size: 100% 120%;
+	background-attachment: fixed;
+}
+
+fieldset{
+	margin: 30px 20px ;
+	display: inline;
+
+}
+label input{
+	width: 280px;
+}
+form{
+	font-family:"DancingScript-Regular";
+	font-size: 20px;
+	color: #ffd635;
+	font-weight: 30px;
+	margin-top: 200px;
+	text-align: center;
+}
+p {
+	color: white;
+}
+
+@font-face{
+	font-family:"GloriaHallelujah";
+	src: url(../fonts/GloriaHallelujah.ttf);
+}
+
+@font-face{
+	font-family:"DancingScript-Regular";
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+

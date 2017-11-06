@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Inicio</title>	
+	<link rel="icon" href="img/icono.ico">
+	<link rel="stylesheet" href="font/fonts.css">
+	<link rel="stylesheet" href="css/estilos.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+
+<body>
+
+	<!-- Inicio Nav -->
+	<header class="container-fluid p-0">
+
+		<nav class="navbar navbar-expand-lg text-center navbar-dark fixed-top " id="nav">
+			<a class="navbar-brand " href="#">
+				<img src="img/Logo.png" alt="">
+			</a>	
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opcNav" aria-controls="opcNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-center  " id="opcNav" >
+				<ul class="navbar-nav mr-5 pr-5 ">
+					<li class="nav-item active">
+						<a class="nav-link" href="#presentacion">Inicio <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Nosotros">Nosotros</a>
+					</li>
+					<li class="nav-item" id="item1">
+						<a class="nav-link" href="#Eventos">Eventos</a>
+					</li>
+					<li class="nav-item" id="item1">
+						<a class="nav-link" href="#">Contactenos</a>
+					</li>
+					<li class="nav-item">
+						<button type="button" class="btn btn-primary" onclick="location.href='#'" id="btnIngreso">Iniciar sesión</button>					
+					</li>
+				</ul>
+			</nav>
+
+		</header>
+		<!-- Fin Nav -->
+
+		<!-- Fondo inicial -->
+		<section class="container-fluid p-0 align-items-center d-flex justify-content-center" id="presentacion">
+
+			<div class="text-center tipo-vladimir ">
+				<h1 class="display-2">Bienvenido a Nautas</h1>
+				<h2 class="display-3">Comienza tu aventura</h2>
+				<hr>
+				<button type="button" class=" btn btn-outline-warning" onclick="location.href='#'" id="btnIniciar">Inicia tu experiencia </button>
+			</div>
+
+		</section>
+		<!-- Fondo inicial -->
+
+
+		<!-- Sección Nosotros -->
+		<section class="container-fluid p-0" id="Nosotros">
+
+				<div class="row d-flex justify-content-center align-items-center text-center opacidad " id="rowNosotros">
+
+					<div class="col-sm-12 col-md-4 order-md-2">
+						<h1 class="h1">
+							¿Quienes somos?
+						</h1>
+						<p> Nautas es una empresa de recreación y logística fundada en el año 2015 con el propósito de brindar diversión a las personas por medio de los  eventos que la empresa ofrece</p>
+					</div>
+
+					<div class="col-sm-12 col-md-4 order-md-1">
+						<h1 class="h1">Misión</h1>
+						<p>
+							La empresa tiene como objetivo el cumplir con cada evento dando la mayor calidad posible para satisfacer al cliente y aumente el crecimiento de la empresa.
+						</p>
+
+					</div>
+
+					<div class="col-sm-12 col-md-4 order-md-3">
+						<h1 class="h1">Visión</h1>
+						<p>
+							La empresa se proyecta con la idea de que para 2022 sea una de las empresas de logística y eventos  con más popular entre el público y alcance un buen reconocimiento por su desempeño y calidad de sus eventos.
+						</p>
+					</div>
+				</div>
+		</section>
+		<!-- Fin Sección Nosotros -->
+
+
+
+		<!-- Sección Eventos -->
+		<!-- Nav Evento -->
+		<section class="container-fluid p-0 " id="Eventos">
+			<div class="opacidadEventos">
+				<div class="row pad-eve">
+					<div class=" col-12">
+						<ul class="nav navEve">
+							<li class="nav-item" >
+								<a class="nav-link active colorEve"  data-toggle="tab" href="#BabysShower" role="tab" aria-controls="home" aria-selected="true">Babys Shower</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="profile-tab" data-toggle="tab" href="#FiestaInfantiles" role="tab" aria-controls="profile" aria-selected="false">Fiesta Infantiles</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="contact-tab" data-toggle="tab" href="#15años" role="tab" aria-controls="contact" aria-selected="false">15 Años</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="contact-tab" data-toggle="tab" href="#MegaRumba" role="tab" aria-controls="contact" aria-selected="false">Mega Rumba</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="contact-tab" data-toggle="tab" href="#Viejotecas" role="tab" aria-controls="contact" aria-selected="false">Viejotecas</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- Nav Evento -->
+
+				<div class="tab-content" id="myTabContent">
+
+					<!-- BBShower -->
+					<div class="tab-pane fade show active" id="BabysShower" role="tabpanel" aria-labelledby="home-tab">
+						<div class="row  d-flex align-items-center justify-content-center " id="rowEventos">
+
+							<div class="col-md-6 justify-content-center d-flex mt-5">
+									<img src="img/BBshower.PNG" class="rounded-circle">
+							</div>
+
+							<div class="col-md-6 mt-5">
+								<h4>Babys Shower </h4>
+								<p class="lead">Convierte tu baby shower en un dia especial,elegante e inolvidable donde halla amor y alegria entre padres familiares y amigos enfocandonos en su animacion personalizada con la decoracion y organizacion que ofrece nuestra empresa.</p>
+							</div>
+						</div>
+					</div>
+					<!-- BBShower -->
+
+					<!-- Fiestas Infantiles -->
+					<div class="tab-pane fade show " id="FiestaInfantiles" role="tabpanel" aria-labelledby="home-tab">
+						<div class="row  d-flex align-items-center justify-content-center " id="rowEventos">
+							<div class="col-md-6 justify-content-center d-flex mt-5">
+									<img src="img/infan2.jpg" class="rounded-circle infan">
+							</div>
+
+							<div class="col-md-6 mt-5">
+								<h4>Fiesta Infantiles</h4>
+								<p class="lead">fantasticas fiestas infantiles con payasos, magos, ferias, match, marionetas, titeres, chiquitekas, y muchas cosas mas, te asesoramos en la organización de tus eventos y fiestas infantiles según tus necesidades. Particpa de tu fiesta como un invitado más. No te preocupes por nada! nosotros nos encargamos de todo.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Fiestas Infantiles -->
+
+					<!-- 15 Años -->
+					<div class="tab-pane fade show " id="15años" role="tabpanel" aria-labelledby="home-tab">
+						<div class="row  d-flex align-items-center justify-content-center  " id="rowEventos">
+							<div class="col-md-6 justify-content-center d-flex mt-5">
+									<img src="img/15 años.PNG" class="rounded-circle">
+							</div>
+
+							<div class="col-md-6 mt-5">
+								<h4>15 años</h4>
+								<p class="lead">Eventos para 15 años en Bogotá, con grandes propuestas de fiestas tematicas, clasicas y originales. 
+								A continuación puedes ver precios para la organización de tu fiesta de 15 años, con paquetes economic os y de gran calidad para la celebración de tus quince.</p>
+							</div>
+						</div>
+					</div>
+					<!-- 15 Años -->
+					
+					<!-- Mega Rumba -->
+					<div class="tab-pane fade show " id="MegaRumba" role="tabpanel" aria-labelledby="home-tab">
+						<div class="row  d-flex align-items-center justify-content-center " id="rowEventos">
+							<div class="col-md-6 justify-content-center d-flex mt-5">
+									<img src="img/Mega Rumba.PNG" class="rounded-circle">
+							</div>
+
+							<div class="col-md-6 mt-5">
+								<h4>Mega Rumba</h4>
+								<p class="lead">Haz de tu celebración la mejor con la megafiesta, sonido HD, full iluminación, efectos especiales, shows de baile, pirotecnia e integracion por medio de competencias y juegos interactivos ademas de musica crossover ¡La Mejor Fiesta!</p>
+							</div>
+						</div>
+					</div>
+					<!-- Mega Rumba -->
+					
+					<!-- Viejoteca -->
+					<div class="tab-pane fade show " id="Viejotecas" role="tabpanel" aria-labelledby="home-tab">
+						<div class="row  d-flex align-items-center justify-content-center " id="rowEventos">
+							<div class="col-md-6 justify-content-center d-flex mt-5">
+									<img src="img/Viejotecas.PNG" class="rounded-circle">
+							</div>
+
+							<div class="col-md-6 mt-5">
+								<h4>Viejotecas</h4>
+								<p class="lead">Si lo que quieres es gozar de un ambiente con tematica y música retro, la viejoteca es la mejor opción la cúal cuenta con un espacio cerrado, efectos especiales y barra de licores. !que mas pedirias, música, iluminación,efectos y buena compañia</p>
+							</div>
+						</div>
+					</div>
+					<!-- Viejoteca -->
+
+				</div>
+			</div>
+
+		</section>
+
+		<!-- Inicio Sección Eventos -->
+
+
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+	</html>
+
