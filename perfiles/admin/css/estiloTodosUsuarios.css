@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+body{
+	background:url(../img/fondo.png) no-repeat fixed center center;
+	background-size: cover; 
+}
+@font-face{
+	font-family:"GloriaHallelujah";
+	src: url(../font/GloriaHallelujah.ttf);
+}
+header {
+	background: #173b9e;
+	padding: 0px;	
+}
+ /* --- SIDEBAR --- */
+
+#sidebartext {
+	font-family: "GloriaHallelujah";
+	font-size: 22px;
+	color:white;
+}
+.nav a {
+	margin-top: 0px ;
+	font-family: "GloriaHallelujah";
+	font-size: 18px;	
+	color: #ffd635;
+}
+.navbar {
+	background: #173b9e;
+	opacity: 0.8; 
+}
+.aside .navbar a:hover {
+	background: #0074e8;
+	text-decoration: none;
+}
+.aside .navbar a {
+	display: block;
+	padding: 9px;
+	border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.name {
+	font-size: 18px;
+}
+
+.userpicture {
+	width: 120px;
+	height: 120px;
+}
+
+/* --- Widget Estado --- */
+
+.main .estado .caja {
+	background: #fff;
+	border: 1px solid #e3e3e3;
+	padding: 16px 20px;
+	flex: 1;
+	text-align: center;
+}
+
+.main .estado .caja h4 {
+	margin-bottom: 2px;
+	color: #173b9e;
+}
+
+.main .estado .caja p {
+	color: #a8a8a8;
+	margin-bottom: 0;
+}
+
+/* Footer */
+
+.iconF{
+	margin-top: 6px;
+	margin-left: 25px;
+	font-size: 18px;
+	color: #fff;
+}
+footer {
+	background: #173b9e;
+	color: white;

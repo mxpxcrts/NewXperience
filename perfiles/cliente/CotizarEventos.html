@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="icon" type="text/css" href="img/icono.ico">
+	<link rel="stylesheet" href="css/CotizarEvento.css">
+	<link rel="stylesheet" href="font/style.css">
+	<title>Cotizar Eventos</title>
+	
+</head>
+<body>
+	<div class="container-fluid">
+			<!-- HEADER -->
+		<header class="row">
+			<div class="logo col-11">
+				<img src="../recreador/img/logo.png" width="100" alt="Logo New Xperience">
+			</div>
+			<div class="col-1">
+				<nav class="nav salir">
+					<a href="../../inicio.html" class="nav-link active"> Salir </a>
+				</nav>
+			</div>
+		</header>
+			<!-- SIDEBAR -->
+		<div class="row mt-3">
+			<aside class="aside col-sm-4 col-md-auto">
+				
+				<nav id="sidebar" class="navbar d-flex d-sm-block justify-content-center flex-wrap mb-5">
+					<ul class="nav flex-column mb-0">
+						<li>
+							<p id="sidebartext">Perfil</p>
+						</li>
+						<li class="nav-item">
+							<a href="Cliente.html" class="nav-link active">Mi Perfil</a>
+						</li>
+						<li class="nav-item">
+							<a href="EditarPerfil.html" class="nav-link">Editar Perfil</a>
+						</li>
+					</ul>
+					
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<p id="sidebartext">Eventos</p>
+						</li>
+						<li class="nav-item">
+							<a href="CotizarEventos.html" class="nav-link">Cotizar eventos</a>
+						</li>
+						<li class="nav-item">
+							<a href="ModificarEvento.html" class="nav-link">Modificar evento</a>
+						</li>
+						<li class="nav-item">
+							<a href="ListarEventos.html" class="nav-link">Lista de eventos</a>
+						</li>
+					</ul>
+
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<p id="sidebartext">Reportes</p>
+						</li>	
+						<li class="nav-item">
+							<a href="CalificarEvento.html" class="nav-link">Calificar evento</a>
+						</li>
+						<li class="nav-item">
+							<a href="Contrato.html" class="nav-link">Descargar contrato</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<!-- MAIN -->
+		<main class="main col">
+				<div class="col jumbotron mt-3">
+				<div class="section col text-center mt-3 mb-5">
+					<h2>Cotizar Evento</h2>
+				</div>
+				
+				<form action="">
+						<fieldset class="form-group container ">
+							<hr>
+								<div class="form-row ">
+									<div class="form-group col-6 ">
+										<label for="tipoEvento">Tipo de Evento:</label>
+										<select name="tipoEvento" id="tipoEvento" class="form-control">
+											<option value="15Años">15 años</option>
+											<option value="fiestaInfantil">Fiesta Infantil</option>
+											<option value="megaRumba">Mega Rumba</option>
+											<option value="viejoteca">Viejoteca</option>
+										</select>
+									</div>
+
+									<div class="form-group col-6">
+										<label for="tipoPaquete">Tipo de Paquete:</label>
+										<select name="tipoPaquete" id="tipoPaquete" class="form-control">
+											<option value="lux">Lux</option>
+											<option value="estelar">Estelar</option>
+										</select>
+									</div>
+								</div>
+
+
+								<div class="form-row ">
+									<div class="form-group col-6 ">
+										<label for="">Fecha del Evento:</label>
+										<input type="text" class="form-control" placeholder="Fecha del Evento (DD/MM/AAA)">
+									</div>
+									<div class="form-group col-6">
+										<label for="numRecreadores">Número de Recreadores:</label>
+										<select name="numRecreadores" id="numRecreadores" class="form-control">
+											<option value="1">1 Recreador</option>
+											<option value="3">2 Recreadores</option>
+											<option value="3">3 Recreadores</option>
+											<option value="4">4 Recreadores</option>
+											<option value="5">5 Recreadores</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-row ">
+									<div class="form-group col-6 ">
+										<label for="">Número de Invitados:</label>
+										<input type="text" class="form-control" placeholder="Número de invitadors (recuerde no exceder los 60 invitados)">
+									</div>
+									<div class="form-group col-6">
+										<label for="añadirAdicional">Añadir Adicional:</label>
+										<select name="añadirAdicional" id="añadirAdicional" class="form-control">
+											<option value="luces">Luces</option>
+											<option value="showMagia">Show de Magía</option>
+											<option value="inflables">Inflables</option>
+											<option value="sonido">Sonido</option>
+										</select>
+									</div>
+									<div class="form-group col-12">
+										<p>A su cotización se le dará respuesta en la mayor brevedad posible.</p>
+										<button class="btn btn-info btn-sm btn-block">Guardar</button>
+									</div>
+								</div>
+						</fieldset>
+					</form>
+			</div>
+		</main>
+
+		</div>
+
+		<!-- Footer -->
+
+		<footer class="row fixed-bottom">
+			<div class="col">
+				<p class="lead m-0 text-center" >320 222 11 44</p >
+			</div>
+			<div class="col-sm-6 col-md-8 ">
+				<p class="lead m-0 text-center" >Copyright @2017 New Xperience</p >
+			</div>
+
+			<div class="col-sm-6 col-md-2 ">
+				<a fb href="#" class="icon-facebook d-inline-block iconF"></a>
+			</div>
+		</footer>
+		
+	</div>
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/popovers.js"></script>
+</body>
+</html>

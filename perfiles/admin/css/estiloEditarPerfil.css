@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+body{
+	background:url(../img/fondo.png) no-repeat fixed center center;
+	background-size: cover; 
+}
+@font-face{
+	font-family:"GloriaHallelujah";
+	src: url(../font/GloriaHallelujah.ttf);
+}
+header {
+	background: #173b9e;
+	padding: 0px;	
+}
+ /* --- SIDEBAR --- */
+
+#sidebartext {
+	font-family: "GloriaHallelujah";
+	font-size: 22px;
+	color:white;
+}
+.nav a {
+	margin-top: 0px ;
+	font-family: "GloriaHallelujah";
+	font-size: 18px;	
+	color: #ffd635;
+}
+.navbar {
+	background: #173b9e;
+	opacity: 0.8; 
+}
+.aside .navbar a:hover {
+	background: #0074e8;
+	text-decoration: none;
+}
+.aside .navbar a {
+	display: block;
+	padding: 9px;
+	border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.name {
+	font-size: 18px;
+}
+
+.userpicture {
+	width: 120px;
+	height: 120px;
+}

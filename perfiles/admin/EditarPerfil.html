@@ -5,8 +5,8 @@
 	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="icon" type="text/css" href="img/icono.ico">
-	<link rel="stylesheet" href="css/estiloEditarPerfil.css">
-	<link rel="stylesheet" href="font/style.css">
+	<link rel="stylesheet" href="css/estiloIndexAdministrador.css">
+	<link rel="stylesheet" href="font/fontello.css">
 	<title>Editar Perfil</title>
 	
 </head>
@@ -14,23 +14,18 @@
 	<div class="container-fluid">
 			<!-- HEADER -->
 		<header class="row">
-			<div class="logo col-11">
-				<img src="../recreador/img/logo.png" width="100" alt="Logo New Xperience">
-			</div>
-			<div class="col-1">
-				<nav class="nav salir">
-					<a href="../../inicio.html" class="nav-link active"> Salir </a>
-				</nav>
+			<div class="logo col-12">
+				<marquee class="marquee" direction="left"><img src="../admin/img/logo.png" width="100" height="35" alt="Logo New Xperience"></marquee>
 			</div>
 		</header>
 			<!-- SIDEBAR -->
 		<div class="row mt-3">
 			<aside class="aside col-sm-4 col-md-auto">
 				
-				<nav id="sidebar" class="navbar d-flex d-md-block justify-content-center flex-wrap mb-5">
+				<nav id="sidebar" class="navbar d-flex d-sm-block justify-content-center flex-wrap mb-5">
 					<ul class="nav flex-column mb-0">
 						<li>
-							<p id="sidebartext">Perfil</p>
+							<p class="icon-user-1" id="sidebartext">Perfil</p>
 						</li>
 						<li class="nav-item">
 							<a href="indexRecreador.html" class="nav-link active">Mi Perfil</a>
@@ -39,43 +34,67 @@
 							<a href="EditarPerfil.html" class="nav-link">Editar Perfil</a>
 						</li>
 					</ul>
-					<ul class="nav flex-column">
-						<li class="nav-item">
-							<p id="sidebartext">Capacitaciones</p>
+					<ul class="nav flex-column mb-0">
+						<li>
+							<p class="icon-users-1" id="sidebartext">Usuarios</p>
 						</li>
 						<li class="nav-item">
-							<a href="CapacitacionesAsignadas.html" class="nav-link">Asignadas</a>
+							<a href="" class="nav-link">Todos los usuarios</a>
 						</li>
 						<li class="nav-item">
-							<a href="HistorialCapacitaciones.html" class="nav-link">Historial</a>
+							<a href="" class="nav-link">Añadir nuevo usuario</a>
+						</li>
+					</ul>
+					<ul class="nav flex-column mb-0">
+						<li>
+							<p class="icon-award" id="sidebartext">Capacitaciones</p>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Crear Capacitaciones</a>
+						</li>
+					</ul>
+					<ul class="nav flex-column mb-0">
+						<li>
+							<p class="icon-globe" id="sidebartext">Eventos</p>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Crear evento</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Asignar evento</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Crear Paquete</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Consultar Cotizaciones</a>
 						</li>
 					</ul>
 					<ul class="nav flex-column">
 						<li class="nav-item">
-							<p id="sidebartext">Eventos</p>
-						</li>
-						<li class="nav-item">
-							<a href="ConsultarEvento.html" class="nav-link">Consultar eventos</a>
-						</li>
-					</ul>
-					<ul class="nav flex-column">
-						<li class="nav-item">
-							<p id="sidebartext">Reportes</p>
+							<p class="icon-chart-line" id="sidebartext">Reportes</p>
 						</li>	
 						<li class="nav-item">
-							<a href="Estadisticas.html" class="nav-link">Estadísticas</a>
+							<a href="#" class="nav-link">Registro de ventas</a>
 						</li>
 						<li class="nav-item">
-							<a href="Observaciones.html" class="nav-link">Observaciones</a>
+							<a href="#" class="nav-link">Contratos</a>
 						</li>
 						<li class="nav-item">
-							<a href="Contrato.html" class="nav-link">Descargar contrato</a>
+							<a href="#" class="nav-link">Estadisticas</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Observaciones</a>
+						</li>
+					</ul>
+					<ul  class="nav flex-column">
+						<li class="nav-item">
+							<a class="icon-logout" href="#" class="nav-link">SALIR</a>
 						</li>
 					</ul>
 				</nav>
 			</aside>
-		
-		<!-- MAIN -->
+			<!-- MAIN -->
 
 		<main class="main col">
 			<div class="col jumbotron mt-3">
@@ -152,7 +171,7 @@
 
 			<!-- Footer -->
 
-		<footer class="row fixed-bottom">
+		<footer class="row">
 			<div class="col">
 				<p class="lead m-0 text-center" >320 222 11 44</p >
 			</div>
@@ -161,7 +180,7 @@
 			</div>
 
 			<div class="col-sm-6 col-md-2 ">
-				<a fb href="#" class="icon-facebook d-inline-block iconF"></a>
+				<a fb href="#" class="icon-facebook-squared"></a>
 			</div>
 		</footer>
 		
