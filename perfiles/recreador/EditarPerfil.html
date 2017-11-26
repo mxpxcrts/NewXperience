@@ -2,114 +2,117 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="icon" type="text/css" href="img/icono.ico">
-	<link rel="stylesheet" href="css/estiloEditarPerfil.css">
-	<link rel="stylesheet" href="font/style.css">
+	<link rel="stylesheet" href="css/editarPerfil.css">
+	<link rel="stylesheet" href="font/Fontello/css/fontello.css">
+	<link rel="stylesheet" href="font/Fontello/font/fontello.ttf">
+	<script src="js/formulario.js"></script>
 	<title>Editar Perfil</title>
 	
 </head>
 <body>
+
+	<!-- SIDEBAR -->
+
 	<div class="container-fluid">
-			<!-- HEADER -->
-		<header class="row">
-			<div class="logo col-11">
-				<img src="../recreador/img/logo.png" width="100" alt="Logo New Xperience">
-			</div>
-			<div class="col-1">
+		<div class="row">
+			<header class="col-md-2">
+				<span id="button-menu" class="icon-th-list"></span>
+				<nav class="navegacion">
+					<ul class="menu">
+						<li class="title-menu">Recreador</li>
+						<li class="item-submenu" menu="1">
+							<a href="#"><span class="icon-user-1"></span>Perfil</a>
+							<ul class="submenu">
+								<li class="title-menu"></span><span class="icon-user-1"></span>Perfil</li>
+								<li class="icon-left-open">Atras</li>
+								<li><a href="index.html">Mi Perfil</a></li>
+								<li><a href="editarPerfil.html">Editar Perfil</a></li>
+							</ul>
+						</li>
+
+						<li class="item-submenu" menu="2">
+							<a href="#"><span class="icon-award"></span>Capacitaciones</a>
+							<ul class="submenu">
+								<li class="title-menu"></span><span class="icon-award"></span>Capacitaciones</li>
+								<li class="icon-left-open">Atras</li>
+								<li><a href="capacitacionesAsignadas.html">Asignadas</a></li>
+								<li><a href="historialCapacitaciones.html">Historial</a></li>
+							</ul>
+						</li>
+
+						<li class="item-submenu" menu="3">
+							<a href="#"><span class=" icon-sound"></span>Eventos</a>
+							<ul class="submenu">
+								<li class="title-menu"></span><span class=" icon-sound"></span>Eventos</li>
+								<li class="icon-left-open">Atras</li>
+								<li><a href="consultarEvento.html">Consultar eventos</a></li>
+							</ul>
+						</li>
+
+						<li class="item-submenu" menu="4">
+							<a href="#"><span class="icon-chart-bar"></span>Reportes</a>
+							<ul class="submenu">
+								<li class="title-menu"></span><span class="icon-chart-bar"></span>Reportes</li>
+								<li class="icon-left-open">Atras</li>
+								<li><a href="estadisticas.html">Estadísticas</a></li>
+								<li><a href="observaciones.html">Observaciones</a></li>
+								<li><a href="contrato.html">Contratos</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<header class="col-md-8 d-flex justify-content-center">
+				<img src="img/logo.png" width="100" height="35" alt="Logo New Xperience">
+			</header>
+			<header class="col-md-2 d-flex justify-content-end">
 				<nav class="nav salir">
-					<a href="../../inicio.html" class="nav-link active"> Salir </a>
+					<a href="../../inicio.html" class="icon-logout"> Salir </a>
 				</nav>
-			</div>
-		</header>
-			<!-- SIDEBAR -->
-		<div class="row mt-3">
-			<aside class="aside col-sm-4 col-md-auto">
-				
-				<nav id="sidebar" class="navbar d-flex d-md-block justify-content-center flex-wrap mb-5">
-					<ul class="nav flex-column mb-0">
-						<li>
-							<p id="sidebartext">Perfil</p>
-						</li>
-						<li class="nav-item">
-							<a href="indexRecreador.html" class="nav-link active">Mi Perfil</a>
-						</li>
-						<li class="nav-item">
-							<a href="EditarPerfil.html" class="nav-link">Editar Perfil</a>
-						</li>
-					</ul>
-					<ul class="nav flex-column">
-						<li class="nav-item">
-							<p id="sidebartext">Capacitaciones</p>
-						</li>
-						<li class="nav-item">
-							<a href="CapacitacionesAsignadas.html" class="nav-link">Asignadas</a>
-						</li>
-						<li class="nav-item">
-							<a href="HistorialCapacitaciones.html" class="nav-link">Historial</a>
-						</li>
-					</ul>
-					<ul class="nav flex-column">
-						<li class="nav-item">
-							<p id="sidebartext">Eventos</p>
-						</li>
-						<li class="nav-item">
-							<a href="ConsultarEvento.html" class="nav-link">Consultar eventos</a>
-						</li>
-					</ul>
-					<ul class="nav flex-column">
-						<li class="nav-item">
-							<p id="sidebartext">Reportes</p>
-						</li>	
-						<li class="nav-item">
-							<a href="Estadisticas.html" class="nav-link">Estadísticas</a>
-						</li>
-						<li class="nav-item">
-							<a href="Observaciones.html" class="nav-link">Observaciones</a>
-						</li>
-						<li class="nav-item">
-							<a href="Contrato.html" class="nav-link">Descargar contrato</a>
-						</li>
-					</ul>
-				</nav>
-			</aside>
-		
-		<!-- MAIN -->
+			</header>
+		</div>
+	</div>
 
-		<main class="main col">
-			<div class="col jumbotron mt-3">
-				<div class="section col text-center mt-3 mb-5">
-					<h2>Actualizar Datos</h2>
-				</div>
-				<div class=" userPhotoEdit col-6">
-					<img src="img/user.png" alt="user profile picture" class="userpicture">
-					<button id="fotoChange" class="btn-sm btn-primary mt-2 ml-5">Cambiar foto de perfil</button>
-				</div>
+	<!-- MAIN -->
 
-				<form action="">
-						<fieldset class="form-group container ">
-							<hr>
+	<div class="container">
+		<main class=" main row">
+			<div class="col-12 ml-5">
+				<div class="d-flex ml-5">
+					<div class="col-9 jumbotron mt-3 ml-5">
+						<div class="section col-12 text-center mt-3 mb-5 ">
+							<h2>Actualizar Datos</h2>
+						</div>
+						<div class=" userPhotoEdit col-10 ml-5 mb-5">
+							<img src="img/user.png" alt="user profile picture" class="userpicture">
+							<button id="fotoChange" class="btn-sm btn-primary mt-2 ml-5">Cambiar foto de perfil</button>
+						</div>
+
+						<form action="" method="post" class="form-update" onsubmit="return validar();">
+							<fieldset class="form-group container ">
+								<hr>
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="">Nombres:</label>
-
-										<input type="text" class="form-control" id="" placeholder="Nombres">
+										<input type="text" class="form-control" id="nombres" placeholder="Nombres">
 									</div>
 									<div class="form-group col-md-6">
 										<label for="">Apellidos:</label>
-										<input type="password" class="form-control" id="" placeholder="Apellidos">
+										<input type="text" class="form-control" id="apellidos" placeholder="Apellidos">
 									</div>
 								</div>
 
 								<div class="form-row ">
 									<div class="form-group col-6 ">
 										<label for="">Teléfono:</label>
-										<input type="text" class="form-control" placeholder="Teléfono">
+										<input type="text" class="form-control" id="telefono" placeholder="Teléfono">
 									</div>
 									<div class="form-group col-6">
 										<label for="">Celular:</label>
-										<input type="text" class="form-control" placeholder=Celular>
+										<input type="text" class="form-control" id="celular" placeholder=Celular>
 									</div>
 								</div>
 
@@ -124,52 +127,57 @@
 									</div>
 									<div class="form-group col-6 ">
 										<label for="">Número de Documento:</label>
-										<input type="text" class="form-control" placeholder="Número de Documento">
+										<input type="text" class="form-control" id="documentoNum" placeholder="Número de Documento">
 									</div>
 								</div>
 
 								<div class="form-row ">
 									<div class="form-group col-12 ">
 										<label for="">Correo electrónico:</label>
-										<input type="email" class="form-control" placeholder="Correo electrónico">
+										<input type="email" class="form-control" id="email" placeholder="Correo electrónico">
 									</div>
 									<div class="form-group col-12 ">
 										<label for="">Contraseña:</label>
-										<input type="password" class="form-control" placeholder="Contraseña (máx 20 caracteres)">
+										<input type="password" class="form-control" id="pass" placeholder="Contraseña (máx 20 caracteres)">
 									</div>
 									<div class="form-group col-12 ">
 										<label for="">Confirmar contraseña:</label>
-										<input type="password" class="form-control" placeholder="Confirmar contraseña (máx 20 caracteres)">
+										<input type="password" class="form-control" id="passConfirm" placeholder="Confirmar contraseña (máx 20 caracteres)">
 									</div>
-									<button class="btn btn-info btn-sm btn-block">Guardar</button>
+									<div class="form-group col-12 ">
+										<!-- <button class="btn btn-info btn-sm btn-block" type="submit" id="btn-submit" value="Enviar">Guardar</button> -->
+										<input type="submit" value="Guardar" class="btn-enviar">
+									</div>
 								</div>
-						</fieldset>
-					</form>
+							</fieldset>
+						</form>
+					</div>
+				</div>
 			</div>
 		</main>
-
-		</div>
-
-			<!-- Footer -->
-
-		<footer class="row fixed-bottom">
-			<div class="col">
-				<p class="lead m-0 text-center" >320 222 11 44</p >
-			</div>
-			<div class="col-sm-6 col-md-8 ">
-				<p class="lead m-0 text-center" >Copyright @2017 New Xperience</p >
-			</div>
-
-			<div class="col-sm-6 col-md-2 ">
-				<a fb href="#" class="icon-facebook d-inline-block iconF"></a>
-			</div>
-		</footer>
-		
 	</div>
 
+	<!-- FOOTER -->
+
+	<footer class="row">
+		<div class="col">
+			<p class="lead m-0 text-center" >320 222 11 44</p >
+		</div>
+
+		<div class="col-sm-6 col-md-8 ">
+			<p class="lead m-0 text-center" >Copyright @2017 New Xperience</p >
+		</div>
+
+		<div class="col-sm-6 col-md-2 ">
+			<a fb href="#" class="icon-facebook-squared d-inline-block iconF"></a>
+		</div>
+	</footer>
 
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/Eperfil.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>	
+	
 </body>
 </html>
