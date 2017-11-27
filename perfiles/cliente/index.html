@@ -5,11 +5,10 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="icon" type="text/css" href="img/icono.ico">
-	<link rel="stylesheet" href="css/editarPerfil.css">
+	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="font/Fontello/css/fontello.css">
 	<link rel="stylesheet" href="font/Fontello/font/fontello.ttf">
-	<script src="js/formulario.js"></script>
-	<title>Editar Perfil</title>
+	<title>Perfil</title>
 	
 </head>
 <body>
@@ -71,77 +70,81 @@
 
 	<div class="container">
 		<main class=" main row">
-			<div class="col-12 ml-5">
-				<div class="d-flex ml-5">
-					<div class="col-9 jumbotron mt-3 ml-5">
-						<div class="section col text-center mt-3 mb-5 ">
-							<h2>Cotizar Evento</h2>
-						</div>
-
-						<form action="">
-							<fieldset class="form-group container ">
-								<hr>
-								<div class="form-row ">
-									<div class="form-group col-6 ">
-										<label for="tipoEvento">Tipo de Evento:</label>
-										<select name="tipoEvento" id="tipoEvento" class="form-control">
-											<option value="15Años">15 años</option>
-											<option value="fiestaInfantil">Fiesta Infantil</option>
-											<option value="megaRumba">Mega Rumba</option>
-											<option value="viejoteca">Viejoteca</option>
-										</select>
-									</div>
-
-									<div class="form-group col-6">
-										<label for="tipoPaquete">Tipo de Paquete:</label>
-										<select name="tipoPaquete" id="tipoPaquete" class="form-control">
-											<option value="lux">Lux</option>
-											<option value="estelar">Estelar</option>
-										</select>
-									</div>
+			<div class="section col-10 mt-5">
+				<div class="d-flex">
+					<div class="col-3 d-flex justify-content-end ml-3 mb-5">
+						<img src="img/user.png" alt="user profile picture" class="userpicture">	
+					</div>
+					<div class="name col-4 mb-5">
+						<h3>María Paula Cortés</h3>
+						<p>Recreador</p>
+					</div>
+					<div class="columna col-md-4">
+						<div class="widget estado">
+							<div class="contenedor d-flex flex-wrap">
+								<div class="caja">
+									<h4>Activo</h4>
+									<p>Estado de Usuario</p>
 								</div>
-
-
-								<div class="form-row ">
-									<div class="form-group col-6 ">
-										<label for="">Fecha del Evento:</label>
-										<input type="text" class="form-control" placeholder="Fecha del Evento (DD/MM/AAA)">
-									</div>
-									<div class="form-group col-6">
-										<label for="numRecreadores">Número de Recreadores:</label>
-										<select name="numRecreadores" id="numRecreadores" class="form-control">
-											<option value="1">1 Recreador</option>
-											<option value="3">2 Recreadores</option>
-											<option value="3">3 Recreadores</option>
-											<option value="4">4 Recreadores</option>
-											<option value="5">5 Recreadores</option>
-										</select>
-									</div>
+								<div class="caja">
+									<h4>2</h4>
+									<p>Eventos pendientes</p>
 								</div>
-
-								<div class="form-row ">
-									<div class="form-group col-6 ">
-										<label for="">Número de Invitados:</label>
-										<input type="text" class="form-control" placeholder="Recuerde no exceder los 60 invitados">
-									</div>
-									<div class="form-group col-6">
-										<label for="añadirAdicional">Añadir Adicional:</label>
-										<select name="añadirAdicional" id="añadirAdicional" class="form-control">
-											<option value="luces">Luces</option>
-											<option value="showMagia">Show de Magía</option>
-											<option value="inflables">Inflables</option>
-											<option value="sonido">Sonido</option>
-										</select>
-									</div>
-									<div class="form-group col-12">
-										<p>A su cotización se le dará respuesta en la mayor brevedad posible.</p>
-										<button class="btn btn-success btn-sm btn-block">Enviar</button>
-									</div>
-								</div>
-							</fieldset>
-						</form>
+							</div>
+						</div>	
 					</div>
 				</div>
+				<div class="row d-flex justify-content-center">
+					<div class="col-10 mt-2">
+						<h5 class="tittleDatos "> DATOS DE CONTACTO</h5>
+						<table class="table datosContacto bg-info table-responsive">
+							<tr>
+								<th>DIRECCIÓN</th>
+								<td>Cll Falsa 123 </td>
+								<td>
+									<button class="btn btn-xs btn-info edit">
+										<i class="icon-pencil"></i>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<th>TELÉFONO</th>
+								<td>3465512</td>
+								<td>
+									<button class="btn btn-xs btn-info edit">
+										<i class="icon-pencil"></i>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<th>CELULAR</th>
+								<td>320 234 5178</td>
+								<td>
+									<button class="btn btn-xs btn-info edit">
+										<i class="icon-pencil"></i>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<th>E-MAIL</th>
+								<td>jsperez@gmail.com</td>
+								<td>
+									<button class="btn btn-xs btn-info edit">
+										<i class="icon-pencil"></i>
+									</button>
+								</td>
+							</tr>
+						</table>
+					</div>	
+				</div>
+				<div class="row d-flex justify-content-center">
+					<div class="col-10">
+						<h5 class="tittlePerfil mt-3">PERFIL PERSONAL</h5>
+						<p class="perfilPersonal text-justify mb-5">
+							El perfil personal/profesional es el conjunto de capacidades y competencias que posee una persona, que le permitirá asumir responsabilidades propias de una determinada profesión. El analizar nuestro perfil personal/profesional tiene una triple funcionalidad porque nos puede servir para introducirlo en el CV, como un párrafo breve justo debajo de los datos personales, en la carta de presentación a la hora de hablar de nosotros/as mismos/as y así, tanto en un sitio como en el otro o en ambos sitios, el seleccionador tendrá una idea de cómo somos y hacia donde nos dirigimos antes de conocer que hemos estudiado o en qué tenemos experiencia. Por último también nos puede ayudar a la hora de responder a determinadas preguntas en las entrevistas de trabajo.
+						</p>
+					</div>
+				</div>			
 			</div>
 		</main>
 	</div>
@@ -164,8 +167,8 @@
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/Eperfil.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>	
-
 </body>
 </html>

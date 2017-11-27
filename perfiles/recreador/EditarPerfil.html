@@ -91,7 +91,7 @@
 							<button id="fotoChange" class="btn-sm btn-primary mt-2 ml-5">Cambiar foto de perfil</button>
 						</div>
 
-						<form action="" method="post" class="form-update" onsubmit="return validar();">
+						<form action="" name="form1" method="post" class="form-update" onsubmit="return validarPasswd()">
 							<fieldset class="form-group container ">
 								<hr>
 								<div class="form-row">
@@ -138,11 +138,11 @@
 									</div>
 									<div class="form-group col-12 ">
 										<label for="">Contraseña:</label>
-										<input type="password" class="form-control" id="pass" placeholder="Contraseña (máx 20 caracteres)">
+										<input type="password" class="form-control" id="pass" size="15" placeholder="Contraseña (máx 20 caracteres)">
 									</div>
 									<div class="form-group col-12 ">
 										<label for="">Confirmar contraseña:</label>
-										<input type="password" class="form-control" id="passConfirm" placeholder="Confirmar contraseña (máx 20 caracteres)">
+										<input type="password" class="form-control" id="passConfirm" size="15" placeholder="Confirmar contraseña (máx 20 caracteres)">
 									</div>
 									<div class="form-group col-12 ">
 										<!-- <button class="btn btn-info btn-sm btn-block" type="submit" id="btn-submit" value="Enviar">Guardar</button> -->
@@ -174,10 +174,10 @@
 	</footer>
 
 	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/Eperfil.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/main.js"></script>
+	<script src="js/form.js"></script>
 	
 </body>
 </html>
