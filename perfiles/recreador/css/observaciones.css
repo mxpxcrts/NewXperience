@@ -12,7 +12,24 @@ body{
 	src: url(../font/GloriaHallelujah.ttf);
 }
 
-/******** SIDERBAR **********/
+/***** Scroll Personalizado *****/
+
+body::-webkit-scrollbar {
+	width: 10px;
+	background: #990000;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #ff9d00;
+	border-radius: 10px;
+	border-right: 2px solid #021b79;
+}
+@font-face{
+	font-family:"GloriaHallelujah";
+	src: url(../font/GloriaHallelujah.ttf);
+}
+
+ /******** SIDERBAR **********/
 
 header{
 	left: 0;
@@ -25,7 +42,6 @@ header #button-menu{
 }
 
 .navegacion{
-	font-family: GloriaHallelujah;
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -35,7 +51,7 @@ header #button-menu{
 }
 
 .navegacion ul{
-	width: 225px;
+	width: 195px;
 	height: 100%;
 	background: #fff;
 	list-style: none;
@@ -49,7 +65,7 @@ header #button-menu{
 
 .navegacion .menu li.title-menu{
 	padding: 20px;
-	background: #0074e8;
+	background: #ff9d00;
 	color: #fff;
 	text-align: center;
 	font-size: 22px;
@@ -59,14 +75,14 @@ header #button-menu{
 	display: block;
 	padding: 20px;
 	border-bottom: 1px solid #C6D0DA;
-	font-size: 18px;
+	font-size: 16px;
 	text-decoration: none;
 	color: black;
 }
 
 .navegacion .menu a:hover{
-	background: #798DA3;
-	color: #ffd635;
+	background: #ff9d00;
+	color: #fff;
 }
 
 /****** SUBMENÚ *****/
@@ -78,9 +94,9 @@ header #button-menu{
 
 .navegacion .submenu li.icon-left-open{
 	padding: 10px 20px;
-	background: #5F6F81;
+	background: #ff9d00;
 	color: #fff;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 @media screen and (max-width: 320px){

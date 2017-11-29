@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="css/editarPerfil.css">
 	<link rel="stylesheet" href="font/Fontello/css/fontello.css">
 	<link rel="stylesheet" href="font/Fontello/font/fontello.ttf">
-	<script src="js/formulario.js"></script>
 	<title>Editar Perfil</title>
 	
 </head>
@@ -88,65 +87,66 @@
 						</div>
 						<div class=" userPhotoEdit col-10 ml-5 mb-5">
 							<img src="img/user.png" alt="user profile picture" class="userpicture">
-							<button id="fotoChange" class="btn-sm btn-primary mt-2 ml-5">Cambiar foto de perfil</button>
+							<span id="fotoChange" class="btn-sm btn-light mt-2 ml-5">
+								<label><input type="file"></label>
+							</span>
 						</div>
 
-						<form action="" name="form1" method="post" class="form-update" onsubmit="return validarPasswd()">
+						<form action="" name="form1" method="post" class="form-update" onsubmit="return validarFormulario()">
 							<fieldset class="form-group container ">
 								<hr>
 								<div class="form-row">
 									<div class="form-group col-md-6">
-										<label for="">Nombres:</label>
-										<input type="text" class="form-control" id="nombres" placeholder="Nombres">
+										<label for="nombres">Nombres:</label>
+										<input type="text" id="nombres" placeholder="Nombres" class="form-control" required>
 									</div>
 									<div class="form-group col-md-6">
-										<label for="">Apellidos:</label>
-										<input type="text" class="form-control" id="apellidos" placeholder="Apellidos">
+										<label for="apellidos">Apellidos:</label>
+										<input type="text" id="apellidos" placeholder="Apellidos" class="form-control" required>
 									</div>
 								</div>
 
 								<div class="form-row ">
 									<div class="form-group col-6 ">
-										<label for="">Teléfono:</label>
-										<input type="text" class="form-control" id="telefono" placeholder="Teléfono">
+										<label for="telefono">Teléfono:</label>
+										<input type="text" class="form-control" id="telefono" placeholder="Teléfono" class="form-control">
 									</div>
 									<div class="form-group col-6">
-										<label for="">Celular:</label>
-										<input type="text" class="form-control" id="celular" placeholder=Celular>
+										<label for="celular">Celular:</label>
+										<input type="text" id="celular" placeholder="Celular" class="form-control">
 									</div>
 								</div>
 
 								<div class="form-row ">
 									<div class="form-group col-6">
 										<label for="documentoTipo">Tipo de Documento</label>
-										<select name="documentoTipo" id="documentoTipo" class="form-control">
+										<select name="documentoTipo" id="documentoTipo" class="form-control custom-select">
 											<option value="C.C">C.C</option>
 											<option value="T.I">T.I</option>
 											<option value="C.E">C.E</option>
 										</select>
 									</div>
 									<div class="form-group col-6 ">
-										<label for="">Número de Documento:</label>
-										<input type="text" class="form-control" id="documentoNum" placeholder="Número de Documento">
+										<label for="documentoNum">Número de Documento:</label>
+										<input type="text" id="documentoNum" placeholder="Número de Documento" class="form-control" required>
 									</div>
 								</div>
 
 								<div class="form-row ">
 									<div class="form-group col-12 ">
-										<label for="">Correo electrónico:</label>
-										<input type="email" class="form-control" id="email" placeholder="Correo electrónico">
+										<label for="email">Correo electrónico:</label>
+										<input type="email" id="email" placeholder="Correo electrónico" class="form-control" required>
 									</div>
 									<div class="form-group col-12 ">
-										<label for="">Contraseña:</label>
-										<input type="password" class="form-control" id="pass" size="15" placeholder="Contraseña (máx 20 caracteres)">
+										<label for="pass">Contraseña:</label>
+										<input type="password" id="pass" size="15" placeholder="Contraseña (máx 20 caracteres)" class="form-control" required>
 									</div>
 									<div class="form-group col-12 ">
-										<label for="">Confirmar contraseña:</label>
-										<input type="password" class="form-control" id="passConfirm" size="15" placeholder="Confirmar contraseña (máx 20 caracteres)">
+										<label for="passConfirm">Confirmar contraseña:</label>
+										<input type="password" id="passConfirm" size="15" placeholder="Confirmar contraseña (máx 20 caracteres)" class="form-control" required>
 									</div>
 									<div class="form-group col-12 ">
-										<!-- <button class="btn btn-info btn-sm btn-block" type="submit" id="btn-submit" value="Enviar">Guardar</button> -->
-										<input type="submit" value="Guardar" class="btn-enviar">
+										<button class="btn btn-info btn-enviar btn-sm btn-block" type="submit" id="btn-submit" value="Submit">Guardar</button>
 									</div>
 								</div>
 							</fieldset>
@@ -176,6 +176,7 @@
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/sweetalert.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/form.js"></script>
 	
