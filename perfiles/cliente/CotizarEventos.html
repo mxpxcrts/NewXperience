@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="font/Fontello/css/fontello.css">
 	<link rel="stylesheet" href="font/Fontello/font/fontello.ttf">
 	<script src="js/formulario.js"></script>
-	<title>Editar Perfil</title>
+	<title>Cotizar Evento</title>
 	
 </head>
 <body>
@@ -49,17 +49,14 @@
 							<ul class="submenu">
 								<li class="title-menu"></span><span class="icon-chart-bar"></span>Reportes</li>
 								<li class="icon-left-open">Atras</li>
-								<li><a href="calificarEvento.html">Calificar Evento</a></li>
+								<li><a href="calificarEvento.html">Observaciones</a></li>
 								<li><a href="contrato.html">Contratos</a></li>
 							</ul>
 						</li>
 					</ul>
 				</nav>
 			</header>
-			<header class="col-md-8 d-flex justify-content-center">
-				<img src="img/logo.png" width="100" height="35" alt="Logo New Xperience">
-			</header>
-			<header class="col-md-2 d-flex justify-content-end">
+			<header class="col-md-10 d-flex justify-content-end">
 				<nav class="nav salir">
 					<a href="../../inicio.html" class="icon-logout"> Salir </a>
 				</nav>
@@ -78,7 +75,7 @@
 							<h2>Cotizar Evento</h2>
 						</div>
 
-						<form action="">
+						<form action="" name="form1" method="post" class="form-update" onsubmit="return validarFormulario()">
 							<fieldset class="form-group container ">
 								<hr>
 								<div class="form-row ">
@@ -105,7 +102,7 @@
 								<div class="form-row ">
 									<div class="form-group col-6 ">
 										<label for="">Fecha del Evento:</label>
-										<input type="text" class="form-control" placeholder="Fecha del Evento (DD/MM/AAA)">
+										<input type="date" class="form-control" placeholder="Fecha del Evento (DD/MM/AAA)" required>
 									</div>
 									<div class="form-group col-6">
 										<label for="numRecreadores">Número de Recreadores:</label>
@@ -122,7 +119,13 @@
 								<div class="form-row ">
 									<div class="form-group col-6 ">
 										<label for="">Número de Invitados:</label>
-										<input type="text" class="form-control" placeholder="Recuerde no exceder los 60 invitados">
+										<select name="numRecreadores" id="numRecreadores" class="form-control">
+											<option value="1">10-20 Personas</option>
+											<option value="3">20-30 Personas</option>
+											<option value="3">30-40 Personas</option>
+											<option value="4">40-50 Personas</option>
+											<option value="5">50-60 Personas</option>
+										</select>
 									</div>
 									<div class="form-group col-6">
 										<label for="añadirAdicional">Añadir Adicional:</label>
@@ -133,9 +136,13 @@
 											<option value="sonido">Sonido</option>
 										</select>
 									</div>
+									<div class="form-row col-12">
+										<label for="">Observaciones:</label>
+										<textarea type="text" name="message" rows="4" cols="90"></textarea>
+									</div>
 									<div class="form-group col-12">
 										<p>A su cotización se le dará respuesta en la mayor brevedad posible.</p>
-										<button class="btn btn-success btn-sm btn-block">Enviar</button>
+										<button class="btn btn-success btn-sm btn-block" id="alerta" type="submit" value="Submit">Enviar</button>
 									</div>
 								</div>
 							</fieldset>
@@ -145,27 +152,12 @@
 			</div>
 		</main>
 	</div>
-
-	<!-- FOOTER -->
-
-	<footer class="row">
-		<div class="col">
-			<p class="lead m-0 text-center" >320 222 11 44</p >
-		</div>
-
-		<div class="col-sm-6 col-md-8 ">
-			<p class="lead m-0 text-center" >Copyright @2017 New Xperience</p >
-		</div>
-
-		<div class="col-sm-6 col-md-2 ">
-			<a fb href="#" class="icon-facebook-squared d-inline-block iconF"></a>
-		</div>
-	</footer>
-
+	
 	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/main.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/main.js"></script>
+	<script src="js/form.js"></script>
 
 </body>
 </html>

@@ -4,135 +4,162 @@
 	padding: 0;
 }
 
-@font-face{
-	font-family: "GloriaHallelujah";
-	src: url(../font/GloriaHallelujah.ttf);
+@font-face {
+    font-family: "Questrial";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../font/Questrial-Regular.ttf);
 }
 
-@font-face{
-	font-family:"Vladimir";
-	src: url(../font/VLADIMIR.TTF);
+body {
+	background-color: white;
 }
 
-/* Nav */
+/**** HEADER ****/
+
 .navNX{
-	background-color: #173b9e;	
+	background: #AF0E49;
+	font-family: Questrial;
 }
-
-.logo{
-	height:100px;
-	width: 100px;
-}
-
 nav>ul>li>a{
 	color: #fff;
-	font-family: "GloriaHallelujah";
-
+}
+nav a:hover{
+    text-decoration:none;
+    text-shadow: 1px 1px; /* Sombreado*/
+    color: #ffc300;
 }
 
-nav>ul>li:hover a{
-	background-color:#0069d9 ;
-	border-radius: 5px;
-	color: #fff;
+/**** SCROLL PERSONALIZADO ****/
+
+body::-webkit-scrollbar {
+	width: 10px;
+	background: black;
 }
 
-/* Inicio */
-.seccion1{
-	background-image: url('../img/Inicio.jpg');
-	background-position: center;
+body::-webkit-scrollbar-thumb {
+	background: #C30F51;
+	border-radius: 10px;
+	border-right: 2px solid #C30F51;
+}
+
+
+/**** CAROUSEL ****/
+
+#nosotrosImg {
+	width: 595px;
+	height: 430px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#car1 h1 {
+    color: #ffc300;
+    font-family: Questrial;
+}
+
+#car1 p {
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/**** NOSOTROS ****/
+
+#nosotros p {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #333;
+    font-size: 15px;
+}
+#nosotros h3 {
+    color: #AF0E49;
+}
+.contenido {
+	width: 96%;
+	height: 96%;
+    font-family: Questrial;
+}
+
+/**** EVENTOS ****/
+
+#eventos {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100% !important;
+    font-family: Questrial;
+}
+
+#eventos {
+	background-image: url("../img/Section Eventos.jpg");
 	background-size: cover;
-	height: 100vh;
-}
-.font-vladimir{
-	font-family: "Vladimir";
-	color: #ffd635;
-}
-
-#btnIniciar{
-	font-size: 1.8em;
-}
-
-/* Nosotros */
-#Nosotros {
-	background-image: url("../img/Nautas.jpg");
-	background-size: cover;
 	background-position: center;
-	height:150vh;
-	font-family: "GloriaHallelujah";
-	font-size:1.5em;
+	height: 600px;
 }
 
-#Nosotros>div>div>h1{
-
-	color:#ffd635;
-}
-
-.opacidad {
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0,0,0,0.7);
-	color: #fff;
-}
-
-.margen1{
-	margin-top: 70px;
-}
-
-/* Eventos */
-#Eventos {
-	background-image: url("../img/Eventos.jpg");
-	background-size: cover;
-	background-position: center;
-	height: 700px;
-}
 .opacidadEventos {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.6);
 	color: #fff;
 }
 
 .padding-navEve{
-	padding-top: 80px;
-}
-
-.infantil{
-	width:50%;
-	height: 60%;
-}
-#rowEventos{
-	width: 100%;
-	height: 100%;
-}
-.imgWi{
-	width: 40%;
+	padding-top: 30px;
 }
 
 section>div>div>ul>li:hover>a{
-	color: #0074e8;
+	color: #ffc300;
 }
 section>div>div>ul>li>a{
-	color: #ffd635;
+	color: white;
+}
+#myTabContent h4 {
+	color: #ffc300;
 }
 
-/* Contactenos */
+/**** CONTÁCTENOS ****/
 
-.jumbotron{
-	font-family: "GloriaHallelujah";
+#contactenos {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100% !important;
+    font-family: Questrial;
 }
 
-/* Footer */
-
-.iconF{
-	font-size: 1.5em;
+#contactenos {
+	background-image: url("../img/Section Contáctenos.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+}
+.opacidadcontactenos {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
 	color: #fff;
 }
 
-footer {
-	background: #173b9e;
-}
+/**** FOOTER ****/
 
-footer>div>div>p{
+.iconF{
+	margin-top: 6px;
+	margin-left: 25px;
+	font-size: 18px;
+	color: #fff;
+}
+footer {
+	background: #AF0E49;
 	color: white;
-	
 }

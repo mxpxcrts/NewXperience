@@ -2,202 +2,253 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-table.min.css">
+	<link rel="stylesheet" href="css/sweetalert2.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="icon" type="text/css" href="img/icono.ico">
-	<link rel="stylesheet" href="css/historialCapacitaciones.css">
-	<link rel="stylesheet" href="font/Fontello/css/fontello.css">
-	<link rel="stylesheet" href="font/Fontello/font/fontello.ttf">
+	<link rel="stylesheet" href="css/estiloHistorialCapacitaciones.css">
+
 	<title>Historial Capacitaciones</title>
 	
 </head>
 <body>
-
-	<!-- SIDEBAR -->
-
 	<div class="container-fluid">
-		<div class="row">
-			<header class="col-md-2">
+		<!-- HEADER -->
+		<div class="row mb-5">
+			<header class="col-md-2 ">
 				<span id="button-menu" class="icon-th-list"></span>
+
+
+				<!-- Sidebar -->
 				<nav class="navegacion">
 					<ul class="menu">
-						<li class="title-menu">Recreador</li>
+						<!-- TITULAR -->
+						<li class="title-menu">Administrador</li>
+						<!-- TITULAR -->
+
 						<li class="item-submenu" menu="1">
 							<a href="#"><span class="icon-user-1"></span>Perfil</a>
 							<ul class="submenu">
-								<li class="title-menu"></span><span class="icon-user-1"></span>Perfil</li>
+								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-user-1"></span>Perfil</li>
 								<li class="icon-left-open">Atras</li>
-								<li><a href="index.html">Mi Perfil</a></li>
-								<li><a href="editarPerfil.html">Editar Perfil</a></li>
+
+								<li><a href="indexRecreador.html">Mi Perfil</a></li>
+								<li><a href="EditarPerfil.html">Editar Perfil</a></li>
 							</ul>
 						</li>
 
 						<li class="item-submenu" menu="2">
 							<a href="#"><span class="icon-award"></span>Capacitaciones</a>
 							<ul class="submenu">
-								<li class="title-menu"></span><span class="icon-award"></span>Capacitaciones</li>
+								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-award"></span>Capacitaciones</li>
 								<li class="icon-left-open">Atras</li>
-								<li><a href="capacitacionesAsignadas.html">Asignadas</a></li>
-								<li><a href="historialCapacitaciones.html">Historial</a></li>
-							</ul>
-						</li>
 
-						<li class="item-submenu" menu="3">
-							<a href="#"><span class=" icon-sound"></span>Eventos</a>
-							<ul class="submenu">
-								<li class="title-menu"></span><span class=" icon-sound"></span>Eventos</li>
-								<li class="icon-left-open">Atras</li>
-								<li><a href="consultarEvento.html">Consultar eventos</a></li>
+								<li><a href="CapacitacionesAsignadas.html">Asignadas</a></li>
+								<li><a href="HistorialCapacitaciones.html">Historial</a></li>
 							</ul>
 						</li>
 
 						<li class="item-submenu" menu="4">
-							<a href="#"><span class="icon-chart-bar"></span>Reportes</a>
+							<a href="#"><span class="icon-globe"></span>Eventos</a>
 							<ul class="submenu">
-								<li class="title-menu"></span><span class="icon-chart-bar"></span>Reportes</li>
+								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-globe"></span>Evento</li>
 								<li class="icon-left-open">Atras</li>
-								<li><a href="estadisticas.html">Estadísticas</a></li>
-								<li><a href="observaciones.html">Observaciones</a></li>
-								<li><a href="contrato.html">Contratos</a></li>
+								<li><a href="ConsultarEvento.html">Consultar Evento</a></li>
+							</ul>
+						</li>
+
+						<li class="item-submenu" menu="5">
+							<a href="#"><span class="icon-chart-line"></span>Reportes</a>
+							<ul class="submenu">
+								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-chart-line"></span>Reportes</li>
+								<li class="icon-left-open">Atras</li>
+								<li><a href="Contrato.html">Contratos</a></li>
+								<li><a href="Estadisticas.html">Estadisticas</a></li>
+								<li><a href="Observaciones.html">Observaciones</a></li>
 							</ul>
 						</li>
 					</ul>
 				</nav>
 			</header>
-			<header class="col-md-8 d-flex justify-content-center">
-				<img src="img/logo.png" width="100" height="35" alt="Logo New Xperience">
-			</header>
-			<header class="col-md-2 d-flex justify-content-end">
+			<header class="col-md-10 d-flex justify-content-end">
 				<nav class="nav salir">
 					<a href="../../inicio.html" class="icon-logout"> Salir </a>
 				</nav>
 			</header>
-		</div>
-	</div>
 
-	<!-- MAIN -->
+			<!-- Sidebar End -->
 
-	<div class="container">
-		<main class=" main row">
-			<div class="section col-10 mt-3 ml-5">
-				<div class="d-flex">
-					<div class="foto col-md-2 mt-4">
-						<img src="img/user.png" alt="user profile picture" class="userpicture">	
-					</div>
-					<div class="name col-md-5 mt-5">
-						<h3>Angel Perez Molina</h3>
-						<p>Recreador</p>
-					</div>
-					<div class="columna col-md-4">
-						<div class="widget estado">
-							<div class="contenedor d-flex flex-wrap">
-								<div class="caja">
-									<h4>154</h4>
-									<p>Eventos realizados</p>
-								</div>
-								<div class="caja">
-									<h4>22</h4>
-									<p>Eventos pendientes</p>
-								</div>
-								<div class="caja">
-									<h4>Golden</h4>
-									<p>Rango</p>
-								</div>
+			<div class="container">
+				<main class="row justify-content-end mb-5">
+					<div class="section col-10 mt-5 mr-5">
+						<div class="d-flex"> 
+							<!-- Contenido -->
+							<div class="col-md-2 mt-4">
+								<img src="img/user.png" alt="user profile picture" class="userpicture">	
+							</div>
+							<div class="name col-md-6 mt-5">
+								<h3>Jose Angel Perez Molina</h3>
+								<p>RECREADOR</p>
+							</div>
+							<div class="columna col-md-4">
+								<div class="widget estado">
+									<div class="contenedor d-flex flex-wrap">
+										<div class="caja">
+											<h4>154</h4>
+											<p>Eventos realizados</p>
+										</div>
+										<div class="caja">
+											<h4>22</h4>
+											<p>Eventos pendientes</p>
+										</div> 
+										<div class="caja">
+											<h4>Golden</h4>
+											<p>Rango</p>
+										</div>
+									</div>
+								</div>	
 							</div>
 						</div>	
+						<div class="col-9">
+							<h5 class="tittleDatos mt-5 mb-3">Historial de Capacitaciones</h5>
+						</div>
+
+				<!-- <div class="fixed-table-toolbar ml-auto" id="cajaBuscar">
+
+					<div class="search d-inline-block">
+						<input class="form-control" type="text" placeholder="Buscar">
+
 					</div>
+
 				</div>
+			-->
+			<!-- Tablas apartir de Boostrap-table -->
+			<table data-toggle="table"
+			data-sort-name="name"
+			data-sort-order="desc"
+			data-pagination="true"
+			data-page-size="5"
+			data-page-list="[5,10,15]"
+			data-pagination-pre-text="Previous"
+			data-pagination-next-text="Next"
+			data-search="true"
+			class="mb-5">
+			<thead>
+				<tr>
+					<th data-field="numero"  data-sortable="true" data-halign="center" data-align="center">N°</th>
+					<th data-field="lugar"  data-sortable="true" data-halign="center" data-align="center">LUGAR</th>
+					<th data-field="fecha" data-halign="center" data-align="center">FECHA</th>
+					<th data-field="hora" data-halign="center" data-align="center">HORA</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td> 1 </td>
+					<td> Simón Bolivar </td>
+					<td> 10-05-2017 </td>
+					<td> 8:30 am </td>
+				</tr>
+				<tr>
+					<td> 2 </td>
+					<td> Prado Veraniego </td>
+					<td> 5-06-2017 </td>
+					<td> 2:00 pm </td>
+				</tr>
+				<tr>
+					<td> 3 </td>
+					<td> Parque el Virrey </td>
+					<td> 22-06-2017 </td>
+					<td> 1:30 pm </td>
+				</tr>
+				<tr>
+					<td> 4 </td>
+					<td> Parque de la 93 </td>
+					<td> 10-07-2017 </td>
+					<td> 10:30 am </td>
+				</tr>
+				<tr>
+					<td> 5 </td>
+					<td> Toberín </td>
+					<td> 22-07-2017 </td>
+					<td> 9:30 am </td>
+				</tr>
+				<tr>
+					<td> 6 </td>
+					<td> Simón Bolivar </td>
+					<td> 10-08-2017 </td>
+					<td> 8:00 am </td>
+				</tr>
+				<tr>
+					<td> 7 </td>
+					<td> Parque de Usaquen </td>
+					<td> 21-08-2017 </td>
+					<td> 3:30 pm </td>
+				</tr>
+				<tr>
+					<td> 8 </td>
+					<td>Calle 127 d Bis 46-10 </td>
+					<td> 12-09-2017 </td>
+					<td> 11:30 am </td>
+				</tr>
+				<tr>
+					<td> 9 </td>
+					<td> Suba </td>
+					<td> 12-09-2017 </td>
+					<td> 11:30 am </td>
+				</tr>
+				<tr>
+					<td> 10 </td>
+					<td> Villa Maria</td>
+					<td> 12-09-2017 </td>
+					<td> 11:30 am </td>
+				</tr>
+				<tr>
+					<td> 11 </td>
+					<td> Calle 100 A 19-30</td>
+					<td> 12-09-2017 </td>
+					<td> 11:30 am </td>
+				</tr>
+				<tr>
+					<td> 12 </td>
+					<td> Calle 72 Cr 23 </td>
+					<td> 12-09-2017 </td>
+					<td> 11:30 am </td>
+				</tr>
+				<tr>
+					<td> 13 </td>
+					<td> Parque el Virrey </td>
+					<td> 12-09-2017 </td>
+					<td> 11:30 am </td>
+				</tr>
+				<tr>
+					<td> 14 </td>
+					<td> Calle 129 d Bis 20-14 </td>
+					<td> 12-09-2017 </td>
+					<td> 11:30 am </td>
+				</tr>
+				<tr>
+					<td> 15 </td>
+					<td>Calle 200 A 19-18 </td>
+					<td> 12-09-2017 </td>
+					<td> 11:30 am </td>
+				</tr>
+			</tbody>					
+		</table>
+	</div>					
+</main>
+</div>
+</div>
+</div>
 
-				<div class="col-11">
-					<h5 class="tittleDatos mt-5 mb-3">Historial de Capacitaciones</h5>
-					<div class="derecha mb-2" id="buscar">Buscar 
-						<input type="search" class="light-table-filter" data-table="order-table" placeholder="Filtro">
-					</div>
-					<table class="order-table table table-hover table-secondary table-responsive mb-5">
-						<thead>
-							<tr>
-								<th scope="col">N°</th>
-								<th scope="col">LUGAR</th>
-								<th scope="col">FECHA</th>
-								<th scope="col">HORA</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td> 1 </td>
-								<td> Simón Bolivar </td>
-								<td> 10-05-2017 </td>
-								<td> 8:30 am </td>
-							</tr>
-							<tr>
-								<td> 2 </td>
-								<td> Prado Veraniego </td>
-								<td> 5-06-2017 </td>
-								<td> 2:00 pm </td>
-							</tr>
-							<tr>
-								<td> 3 </td>
-								<td> Parque el Virrey </td>
-								<td> 22-06-2017 </td>
-								<td> 1:30 pm </td>
-							</tr>
-							<tr>
-								<td> 4 </td>
-								<td> Parque de la 93 </td>
-								<td> 10-07-2017 </td>
-								<td> 10:30 am </td>
-							</tr>
-							<tr>
-								<td> 5 </td>
-								<td> Toberín </td>
-								<td> 22-07-2017 </td>
-								<td> 9:30 am </td>
-							</tr>
-							<tr>
-								<td> 6 </td>
-								<td> Simón Bolivar </td>
-								<td> 10-08-2017 </td>
-								<td> 8:00 am </td>
-							</tr>
-							<tr>
-								<td> 7 </td>
-								<td> Parque de Usaquen </td>
-								<td> 21-08-2017 </td>
-								<td> 3:30 pm </td>
-							</tr>
-							<tr>
-								<td> 8 </td>
-								<td> Parque el Virrey </td>
-								<td> 12-09-2017 </td>
-								<td> 11:30 am </td>
-							</tr>
-						</tbody>					
-					</table>
-				</div>	
-			</div>
-		</main>
-	</div>
-
-	<!-- FOOTER -->
-
-	<footer class="row">
-		<div class="col">
-			<p class="lead m-0 text-center" >320 222 11 44</p >
-		</div>
-
-		<div class="col-sm-6 col-md-8 ">
-			<p class="lead m-0 text-center" >Copyright @2017 New Xperience</p >
-		</div>
-
-		<div class="col-sm-6 col-md-2 ">
-			<a fb href="#" class="icon-facebook-squared d-inline-block iconF"></a>
-		</div>
-	</footer>
-
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/Eperfil.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>	
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/sweetalert2.min.js"></script>
+<script src="js/bootstrap-table.min.js"></script>
+<script src="js/historialCapacitaciones.js"></script>
 </body>
+
 </html>

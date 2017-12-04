@@ -11,27 +11,24 @@ body{
 
 body::-webkit-scrollbar {
 	width: 10px;
-	background: #990000;
+	background: #C30F51;
 }
 
 body::-webkit-scrollbar-thumb {
-	background: #ff9d00;
+	background: black;
 	border-radius: 10px;
-	border-right: 2px solid #021b79;
+	border-right: 2px solid #C30F51;
 }
-@font-face{
-	font-family:"GloriaHallelujah";
-	src: url(../font/GloriaHallelujah.ttf);
-}
-
- /* --- SIDEBAR --- */
+/* --- SIDEBAR --- */
 header{
 	left: 0;
-	background: #990000;
+	height: 40px;
+	background: #AF0E49;
+	opacity: 0.8;
+	box-shadow: 0px 5px 3px #AF0E49;		
 }
-
 header #button-menu{
-	font-size: 20px;
+	font-size: 28px;
 	color: #fff;
 }
 
@@ -41,7 +38,7 @@ header #button-menu{
 	left: 0;
 	height: 100vh;
 	background: rgba(0,0,0,.0);
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 .navegacion ul{
@@ -55,13 +52,15 @@ header #button-menu{
 	left: -320px;
 
 	transition: left .3s;
+	box-shadow: 0px 5px 3px #C30F51;
 }
 
 .navegacion .menu li.title-menu{
 	padding: 20px;
-	background: #ff9d00;
+	background: black;
 	color: #fff;
 	text-align: center;
+	text-shadow: 2px 3px 10px #C30F51;
 	font-size: 22px;
 }
 
@@ -75,8 +74,8 @@ header #button-menu{
 }
 
 .navegacion .menu a:hover{
-	background: #ff9d00;
-	color: #fff;
+	background: black;
+	color: #C30F51;
 }
 /* Submenu ============*/
 
@@ -87,30 +86,28 @@ header #button-menu{
 
 .navegacion .submenu li.icon-left-open{
 	padding: 10px 20px;
-	background: #ff9d00;
+	background: black;
+	text-shadow: 2px 3px 10px #C30F51;
 	color: #fff;
 	font-size: 16px;
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 195px){
 	.navegacion ul{
 		width: 100%;
 	}
 }
-header{
-	background: #990000;	
-}
 .nav a {
 	margin-top: 0px ;
-	font-family: "GloriaHallelujah";
-	font-size: 18px;	
-	color: #ff9d00;
+	font-size: 28px;	
+	color: #fff;
 	text-decoration: none;
 }
 
 /* --- Widget Estado --- */
 .name {
 	font-size: 18px;
+	text-shadow: 2px 3px 10px #C30F51;
 }
 
 .userpicture {
@@ -121,7 +118,7 @@ header{
 
 .container{
 	position:relative;
-	left:6%; 
+	left: 6%;
 }
 .caja {
 	background: #F7F7F7;
@@ -129,11 +126,12 @@ header{
 	padding: 16px 20px;
 	flex: 1;
 	text-align: center;
+	box-shadow: 0px 5px 3px #C30F51;
 }
 
 .caja h4 {
 	margin-bottom: 1px;
-	color: #173b9e;
+	color: #C30F51;
 }
 .caja p {
 	color: #a8a8a8;
@@ -143,14 +141,3 @@ header{
 	border: 1px solid #e3e3e3;
 	background: #F7F7F7;
 }
-/* Footer */
-
-.iconF{
-	margin-top: 6px;
-	margin-left: 25px;
-	font-size: 18px;
-	color: #fff;
-}
-footer {
-	background: #990000;
-	color: white;

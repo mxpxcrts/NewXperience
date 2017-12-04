@@ -1,184 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/sweetalert2.min.css">
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/estiloEditarPerfil.css">
+
 	<link rel="icon" type="text/css" href="img/icono.ico">
-	<link rel="stylesheet" href="css/editarPerfil.css">
-	<link rel="stylesheet" href="font/Fontello/css/fontello.css">
-	<link rel="stylesheet" href="font/Fontello/font/fontello.ttf">
+	
 	<title>Editar Perfil</title>
 	
 </head>
 <body>
-
-	<!-- SIDEBAR -->
-
 	<div class="container-fluid">
+		<!-- HEADER -->
+		<!-- HEADER -->
 		<div class="row">
 			<header class="col-md-2">
 				<span id="button-menu" class="icon-th-list"></span>
+
+
+				<!-- Sidebar -->
 				<nav class="navegacion">
 					<ul class="menu">
-						<li class="title-menu">Recreador</li>
+						<!-- TITULAR -->
+						<li class="title-menu">Administrador</li>
+						<!-- TITULAR -->
+
 						<li class="item-submenu" menu="1">
 							<a href="#"><span class="icon-user-1"></span>Perfil</a>
 							<ul class="submenu">
-								<li class="title-menu"></span><span class="icon-user-1"></span>Perfil</li>
+								<li class="title-menu"><span class=""></span><span class="icon-user-1"></span>Perfil</li>
 								<li class="icon-left-open">Atras</li>
-								<li><a href="index.html">Mi Perfil</a></li>
-								<li><a href="editarPerfil.html">Editar Perfil</a></li>
+
+								<li><a href="indexRecreador.html">Mi Perfil</a></li>
+								<li><a href="EditarPerfil.html">Editar Perfil</a></li>
 							</ul>
 						</li>
 
 						<li class="item-submenu" menu="2">
 							<a href="#"><span class="icon-award"></span>Capacitaciones</a>
 							<ul class="submenu">
-								<li class="title-menu"></span><span class="icon-award"></span>Capacitaciones</li>
+								<li class="title-menu"><span class=""></span><span class="icon-award"></span>Capacitaciones</li>
 								<li class="icon-left-open">Atras</li>
-								<li><a href="capacitacionesAsignadas.html">Asignadas</a></li>
-								<li><a href="historialCapacitaciones.html">Historial</a></li>
-							</ul>
-						</li>
 
-						<li class="item-submenu" menu="3">
-							<a href="#"><span class=" icon-sound"></span>Eventos</a>
-							<ul class="submenu">
-								<li class="title-menu"></span><span class=" icon-sound"></span>Eventos</li>
-								<li class="icon-left-open">Atras</li>
-								<li><a href="consultarEvento.html">Consultar eventos</a></li>
+								<li><a href="CapacitacionesAsignadas.html">Asignadas</a></li>
+								<li><a href="HistorialCapacitaciones.html">Historial</a></li>
 							</ul>
 						</li>
 
 						<li class="item-submenu" menu="4">
-							<a href="#"><span class="icon-chart-bar"></span>Reportes</a>
+							<a href="#"><span class="icon-globe"></span>Eventos</a>
 							<ul class="submenu">
-								<li class="title-menu"></span><span class="icon-chart-bar"></span>Reportes</li>
+								<li class="title-menu"><span class=""></span><span class="icon-globe"></span>Evento</li>
 								<li class="icon-left-open">Atras</li>
-								<li><a href="estadisticas.html">Estadísticas</a></li>
-								<li><a href="observaciones.html">Observaciones</a></li>
-								<li><a href="contrato.html">Contratos</a></li>
+								<li><a href="ConsultarEvento.html">Consultar Evento</a></li>
+							</ul>
+						</li>
+
+						<li class="item-submenu" menu="5">
+							<a href="#"><span class="icon-chart-line"></span>Reportes</a>
+							<ul class="submenu">
+								<li class="title-menu"><span class=""></span><span class="icon-chart-line"></span>Reportes</li>
+								<li class="icon-left-open">Atras</li>
+								<li><a href="Contrato.html">Contratos</a></li>
+								<li><a href="Estadisticas.html">Estadisticas</a></li>
+								<li><a href="Observaciones.html">Observaciones</a></li>
 							</ul>
 						</li>
 					</ul>
 				</nav>
 			</header>
-			<header class="col-md-8 d-flex justify-content-center">
-				<img src="img/logo.png" width="100" height="35" alt="Logo New Xperience">
-			</header>
-			<header class="col-md-2 d-flex justify-content-end">
+				<header class="col-md-10 d-flex justify-content-end">
 				<nav class="nav salir">
 					<a href="../../inicio.html" class="icon-logout"> Salir </a>
 				</nav>
 			</header>
-		</div>
-	</div>
 
-	<!-- MAIN -->
+			<!-- Sidebar End -->
 
-	<div class="container">
-		<main class=" main row">
-			<div class="col-12 ml-5">
-				<div class="d-flex ml-5">
-					<div class="col-9 jumbotron mt-3 ml-5">
-						<div class="section col-12 text-center mt-3 mb-5 ">
+			<div class="container">
+				<main class="row justify-content-end">
+					<div class="section col-10 mt-5 mr-5 justify-content-center " >
+						<div class="text-center mt-3 mb-5">
 							<h2>Actualizar Datos</h2>
 						</div>
-						<div class=" userPhotoEdit col-10 ml-5 mb-5">
+						<div>
 							<img src="img/user.png" alt="user profile picture" class="userpicture">
-							<span id="fotoChange" class="btn-sm btn-light mt-2 ml-5">
-								<label><input type="file"></label>
-							</span>
+							<button class="btn-sm btn-primary mt-2 ml-5">Cambiar foto de perfil</button>
 						</div>
 
-						<form action="" name="form1" method="post" class="form-update" onsubmit="return validarFormulario()">
-							<fieldset class="form-group container ">
-								<hr>
-								<div class="form-row">
-									<div class="form-group col-md-6">
-										<label for="nombres">Nombres:</label>
-										<input type="text" id="nombres" placeholder="Nombres" class="form-control" required>
-									</div>
-									<div class="form-group col-md-6">
-										<label for="apellidos">Apellidos:</label>
-										<input type="text" id="apellidos" placeholder="Apellidos" class="form-control" required>
-									</div>
-								</div>
-
-								<div class="form-row ">
-									<div class="form-group col-6 ">
-										<label for="telefono">Teléfono:</label>
-										<input type="text" class="form-control" id="telefono" placeholder="Teléfono" class="form-control">
-									</div>
-									<div class="form-group col-6">
-										<label for="celular">Celular:</label>
-										<input type="text" id="celular" placeholder="Celular" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-row ">
-									<div class="form-group col-6">
-										<label for="documentoTipo">Tipo de Documento</label>
-										<select name="documentoTipo" id="documentoTipo" class="form-control custom-select">
-											<option value="C.C">C.C</option>
-											<option value="T.I">T.I</option>
-											<option value="C.E">C.E</option>
-										</select>
-									</div>
-									<div class="form-group col-6 ">
-										<label for="documentoNum">Número de Documento:</label>
-										<input type="text" id="documentoNum" placeholder="Número de Documento" class="form-control" required>
-									</div>
-								</div>
-
-								<div class="form-row ">
-									<div class="form-group col-12 ">
-										<label for="email">Correo electrónico:</label>
-										<input type="email" id="email" placeholder="Correo electrónico" class="form-control" required>
-									</div>
-									<div class="form-group col-12 ">
-										<label for="pass">Contraseña:</label>
-										<input type="password" id="pass" size="15" placeholder="Contraseña (máx 20 caracteres)" class="form-control" required>
-									</div>
-									<div class="form-group col-12 ">
-										<label for="passConfirm">Confirmar contraseña:</label>
-										<input type="password" id="passConfirm" size="15" placeholder="Confirmar contraseña (máx 20 caracteres)" class="form-control" required>
-									</div>
-									<div class="form-group col-12 ">
-										<button class="btn btn-info btn-enviar btn-sm btn-block" type="submit" id="btn-submit" value="Submit">Guardar</button>
-									</div>
-								</div>
-							</fieldset>
-						</form>
+						<table class="table datosContacto  table-responsive">
+							<tr>
+								<th>NOMBRES Y APELLIDOS:</th>
+								<td>José Ángel Pérez</td>
+								<td><button class="btn btn-xs btn-info edit"><i class="icon-pencil-2"></i></button></td>
+							</tr>
+							<tr>
+								<th>TELÉFONO:</th>
+								<td>3465512</td>
+								<td><button class="btn btn-xs btn-info edit"><i class="icon-pencil-2"></i></button></td>
+							</tr>
+							<tr>
+								<th>CELULAR:</th>
+								<td>320 234 5178</td>
+								<td><button class="btn btn-xs btn-info edit"><i class="icon-pencil-2"></i></button></td>
+							</tr>
+							<tr>
+								<th>TIPO DE DOCUMENTO:</th>
+								<td><select name="documentoTipo" id="documentoTipo" class="form-control">
+									<option value="C.C">C.C</option>
+									<option value="T.I">T.I</option>
+									<option value="C.E">C.E</option>
+								</select></td>
+							</tr>
+							<tr>
+								<th>N° DE DOCUMENTO:</th>
+								<td>1013234520</td>
+								<td><button class="btn btn-xs btn-info edit"><i class="icon-pencil-2"></i></button></td>
+							</tr>
+							<tr>
+								<th>E-MAIL:</th>
+								<td>jasperez@gmail.com</td>
+								<td><button class="btn btn-xs btn-info edit"><i class="icon-pencil-2"></i></button></td>
+							</tr>
+							<tr>
+								<th>CONTRASEÑA:</th>
+								<td>************</td>
+								<td><button class="btn btn-xs btn-info edit"><i class="icon-pencil-2"></i></button></td>
+							</tr>
+						</table>
+						<div class="my-5 ">
+							<button type="button" class="btn btn-success" onclick="confirmacion()">Confirmar</button>
+						</div>
 					</div>
-				</div>
+				</main>
 			</div>
-		</main>
+		</div>
 	</div>
 
-	<!-- FOOTER -->
-
-	<footer class="row">
-		<div class="col">
-			<p class="lead m-0 text-center" >320 222 11 44</p >
-		</div>
-
-		<div class="col-sm-6 col-md-8 ">
-			<p class="lead m-0 text-center" >Copyright @2017 New Xperience</p >
-		</div>
-
-		<div class="col-sm-6 col-md-2 ">
-			<a fb href="#" class="icon-facebook-squared d-inline-block iconF"></a>
-		</div>
-	</footer>
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
+	<script src="js/sweetalert2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>	
-	<script src="js/sweetalert.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/form.js"></script>
-	
+	<script src="js/editarPerfil.js"></script>
 </body>
 </html>

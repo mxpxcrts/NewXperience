@@ -8,7 +8,7 @@ $(document).ready(function(){
     tdName.html(tdName.children("input[type=text]").val());
     tdPhone.html(tdPhone.children("input[type=text]").val());
     tdButtons.html(
-    "<button class=\"btn btn-xs btn-info edit\"><i class=\" icon-pencil\"></i></button>"+ " " +
+    "<button class=\"btn btn-xs edit\"><i class=\" icon-pencil\"></i></button>"+ " " +
     "<button class=\"add\"><i class=\"\"></i></button>");
   });
 
@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     tdName.html("<input type='text' id='txtName' value='"+tdName.html()+"'/>");
     tdPhone.html("<input type='text' id='txtPhone' value='"+tdPhone.html()+"'/>");
-    tdButtons.html("<button class=\"btn btn-xs btn-danger save\"><i class=\" icon-floppy\"></i></button></td>");
+    tdButtons.html("<button class=\"btn btn-xs save\"><i class=\" icon-floppy\"></i></button></td>");
   });
 
    $(document).on('click','.confirmar', function(){
@@ -31,7 +31,7 @@ $(document).ready(function(){
       text: "Los datos serán actualizados.",
       type: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#004EE9",
+      confirmButtonColor: "#AF0E49",
       confirmButtonText: "Actualizar",
       cancelButtonText: "Cancelar",
       closeOnConfirm: false,

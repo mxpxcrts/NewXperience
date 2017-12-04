@@ -127,3 +127,26 @@ for (var i = 0; i < elementos.length; i++) {
 }
 
 }())
+
+ $(document).on('click','.confirmar', function(){
+    var row = $(this);
+
+    swal({
+      title: "¿Desea confirmar cambios?",
+      text: "Los datos serán actualizados.",
+      type: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#004EE9",
+      confirmButtonText: "Actualizar",
+      cancelButtonText: "Cancelar",
+      closeOnConfirm: false,
+      closeOnCancel: false
+    },
+    function(isConfirm){
+      if (isConfirm) {
+        swal("", "Sus datos han sido actualizados.", "success");
+      } else {
+        swal("", "Continúe actualizando sus datos personales.", "error");
+      }
+    });
+  });

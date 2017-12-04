@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="icon" type="text/css" href="img/icono.ico">
+	<link rel="stylesheet" href="css/Estiloformulariocrearevento.css">
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="font/fontello.ttf">
+	<title>Crear Evento</title>
+	
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<header class="col-md-2">
+				<span id="button-menu" class="icon-th-list"></span>
+
+				<nav class="navegacion">
+					<ul class="menu">
+						<!-- TITULAR -->
+						<li class="title-menu">Administrador</li>
+						<!-- TITULAR -->
+
+						<li class="item-submenu" menu="1">
+							<a href="#"><span class="icon-user-1"></span>Perfil</a>
+							<ul class="submenu">
+								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-user-1"></span>Perfil</li>
+								<li class="icon-left-open">Atras</li>
+
+								<li><a href="indexAdministrador.html">Mi Perfil</a></li>
+								<li><a href="EditarPerfil.html">Editar Perfil</a></li>
+							</ul>
+						</li>
+
+						<li class="item-submenu" menu="2">
+							<a href="#"><span class="icon-users-1"></span>Usuarios</a>
+							<ul class="submenu">
+								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-users-1"></span>Usuarios</li>
+								<li class="icon-left-open">Atras</li>
+
+								<li><a href="TodosLosUsuarios.html">Todos los Usuarios</a></li>
+								<li><a href="AñadirNuevoUsuario.html">Añadir Nuevo Usuario</a></li>
+							</ul>
+						</li>
+
+						<li class="item-submenu" menu="3">
+							<a href="#"><span class=" icon-award"></span>Capacitaciones</a>
+							<ul class="submenu">
+								<li class="title-menu"><span class="fa fa-shopping-bag icon-menu"></span><span class=" icon-award"></span>Capacitaciones</li>
+								<li class="icon-left-open">Atras</li>
+
+								<li><a href="CrearCapacitaciones.html">Crear Capacitación</a></li>
+							</ul>
+						</li>
+
+						<li class="item-submenu" menu="4">
+							<a href="#"><span class="icon-globe"></span>Eventos</a>
+							<ul class="submenu">
+								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-globe"></span>Evento</li>
+								<li class="icon-left-open">Atras</li>
+
+								<li><a href="CrearEvento.html">Crear Evento</a></li>
+								<li><a href="Asignar evento.html">Asignar Evento</a></li>
+								<li><a href="CrearPaquete.html">Crear Paquete</a></li>
+								<li><a href="Cotizaciones.html">Consultar Cotizaciones</a></li>
+							</ul>
+						</li>
+
+						<li class="item-submenu" menu="5">
+							<a href="#"><span class="icon-chart-line"></span>Reportes</a>
+							<ul class="submenu">
+								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-chart-line"></span>Reportes</li>
+								<li class="icon-left-open">Atras</li>
+
+								<li><a href="RegistroVentas.html">Registro de ventas</a></li>
+								<li><a href="Contratos.html">Contratos</a></li>
+								<li><a href="#">Estadisticas</a></li>
+								<li><a href="#">Observaciones</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<header class="col-md-8 d-flex justify-content-center">
+				<img src="../admin/img/logo.png" width="100" height="35" alt="Logo New Xperience">
+			</header>
+			<header class="col-md-2 d-flex justify-content-end">
+				<nav class="nav salir">
+					<a href="../../inicio.html" id="salir" class="icon-logout"> Salir </a>
+				</nav>
+			</header>
+		</div>
+		<div class="container">
+			<main class=" main row">
+				<div class="section col-10 mt-5">
+					<div class="d-flex">
+						<div class="col-12 d-flex  justify-content-center">
+							<h3>Crear Evento</h3>
+						</div>
+					</div>
+					<div class="col-md-12 d-flex justify-content-center">
+						<div class="contenedor-formulario">
+							<div class="wrap">
+								<form action="" class="formulario" name="formulario_registro" method="get">
+									<div>
+										<div class="input-group">
+											<input type="text" id="nombre" name="nombre">
+											<label class="label" for="nombre">Precio del evento $:</label>
+										</div>
+										<div id="Fechacontrato">
+											<p>Tipo de Evento:</p>
+										</div>
+										<div class="input-group radio">
+											<input type="radio" name="tipo" id="sil" value="sil">
+											<label for="sil">Silver</label>
+											<input type="radio" name="tipo" id="pla" value="pla">
+											<label for="pla">Platinum</label>
+											<input type="radio" name="tipo" id="gold" value="gold">
+											<label for="gold">Golden</label>
+											<input type="radio" name="tipo" id="lux" value="lux">
+											<label for="lux">Luxury</label>
+										</div>
+										<div class="input-group">
+											<input type="text" id="nombre" name="nombre">
+											<label class="label" for="nombre">Cantidad de personas (400 personas maximo):</label>
+										</div>
+										<div class="input-group">
+											<select name="Número de Recreadores"> 
+												<option> Número de Recreadores </option>
+												<option value="1"> 5-10 recreador </option>
+												<option value="2"> 10-20 recreadores</option>
+												<option value="3"> 45 recreadores</option>
+												<option value="4"> 70 recreadores</option>
+											</select>
+										</div>
+										<div class="input-group">
+											<input type="text" id="nombre" name="nombre">
+											<label class="label" for="nombre">Detalles del evento:</label>
+										</div>
+
+										<a href="Tablaeventoscreados.html" class="btn btn-block" type="submit">Guardar</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+			<script src="js/jquery-3.2.1.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/main.js"></script>
+			<script src="js/formulario.js"></script>	
+		</body>
+		</html>

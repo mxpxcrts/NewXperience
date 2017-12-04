@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background:url(../img/Fondo4.jpg) no-repeat fixed center center;
+	background-size: cover; 
+}
+/* Scroll Personalizado */
+
+body::-webkit-scrollbar {
+	width: 10px;
+	background: #C30F51;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: black;
+	border-radius: 10px;
+	border-right: 2px solid #C30F51;
+}
+
+/* --- SIDEBAR --- */
+header{
+	height: 40px;
+	background: #AF0E49;
+	opacity: 0.8;
+	box-shadow: 0px 5px 3px #AF0E49;	
+}
+header #button-menu{
+	font-size: 28px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.navegacion{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	height: 100vh;
+	opacity: 0.9;
+}
+
+.navegacion ul{
+	width: 195px;
+	height: 100%;
+	background: #fff;
+	list-style: none;
+
+	position: absolute;
+	top: 0;
+	left: -195px;
+
+	transition: left .3s;
+	box-shadow: 0px 5px 3px #C30F51;
+}
+
+.navegacion .menu li.title-menu{
+	padding: 20px;
+	background: black;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 3px 10px #C30F51;
+	font-size: 22px;
+}
+
+.navegacion .menu a{
+	display: block;
+	padding: 20px;
+	border-bottom: 1px solid #C6D0DA;
+	font-size: 16px;
+	text-decoration: none;
+	color: black;
+}
+
+.navegacion .menu a:hover{
+	background: black;
+	color: #C30F51;
+}
+/* Submenu ============*/
+
+.navegacion .submenu li.title-menu{
+	background: #fff;
+	color: #575D69;
+}
+
+.navegacion .submenu li.icon-left-open{
+	padding: 10px 20px;
+	background: black;
+	text-shadow: 2px 3px 10px #C30F51;
+	color: #fff;
+	font-size: 16px;
+}
+@media screen and (max-width: 195px){
+	.navegacion ul{
+		width: 100%;
+	}
+}
+.nav a {
+	margin-top: 0px ;
+	font-size: 28px;	
+	color: #fff;
+	text-decoration: none;
+}
+/* --- Widget Estado --- */
+.name {
+	font-size: 18px;
+}
+
+.userpicture {
+	width: 120px;
+	height: 120px;
+}
+
+
+.container{
+	position:relative;
+	left:6%; 
+}
+thead{
+	background: black;
+	color: #fff;
+	text-shadow: 2px 3px 10px #C30F51;
+}
+.text{
+	text-shadow: 2px 3px 10px #C30F51;
+}
+.table{
+	border: 1px solid #e3e3e3;
+	background: #F7F7F7;
+	opacity: 0.9;
+	background: #F7F7F7;
+}
+.edit{
+	background: black;
+	color: #fff;
+	box-shadow: 0px 5px 3px #C30F51;
+}
+.delete{
+	background: #C30F51;
+	box-shadow: 0px 5px 3px #C30F51;
+	box-shadow: 0px 5px 3px black;
+}

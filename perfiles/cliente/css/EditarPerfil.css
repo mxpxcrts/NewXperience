@@ -1,36 +1,46 @@
 *{
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
+
+@font-face {
+    font-family: "Questrial";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../font/Questrial-Regular.ttf);
+}
+
 body{
-	background:url(../img/fondo.png) no-repeat fixed center center;
+	background:url(../img/fondo.jpg) no-repeat fixed center center;
 	background-size: cover; 
 }
 
-@font-face{
-	font-family:"RobotoSlab";
-	src: url(../font/RobotoSlab.ttf);
-}
-
-/***** Scroll Personalizado *****/
+/**** SCROLL PERSONALIZADO ****/
 
 body::-webkit-scrollbar {
 	width: 10px;
-	background: #990000;
+	background: black;
 }
 
 body::-webkit-scrollbar-thumb {
-	background: #ff9d00;
+	background: #C30F51;
 	border-radius: 10px;
-	border-right: 2px solid #021b79;
+	border-right: 2px solid #C30F51;
 }
 
  /******** SIDERBAR **********/
 
 header{
-	left: 0;
-	background: #990000;
+	background: #AF0E49;
+}
+
+.nav a {
+	margin-top: 0px ;
+	font-size: 18px;	
+	color: white;
+	text-decoration: none;
+	font-family: Questrial;
 }
 
 header #button-menu{
@@ -52,20 +62,19 @@ header #button-menu{
 	height: 100%;
 	background: #fff;
 	list-style: none;
-
 	position: absolute;
 	top: 0;
 	left: -320px;
-
 	transition: left .3s;
 }
 
 .navegacion .menu li.title-menu{
 	padding: 20px;
-	background: #ff9d00;
-	color: #fff;
+	background: black;
+	color: #C30F51;
 	text-align: center;
 	font-size: 22px;
+	text-shadow: 2px 3px 10px #C30F51;
 }
 
 .navegacion .menu a{
@@ -75,11 +84,13 @@ header #button-menu{
 	font-size: 16px;
 	text-decoration: none;
 	color: black;
+	font-family: Questrial;
 }
 
 .navegacion .menu a:hover{
-	background: #ff9d00;
-	color: #fff;
+	background: black;
+	color: #C30F51;
+	font-family: Questrial;
 }
 
 /****** SUBMENÚ *****/
@@ -87,13 +98,15 @@ header #button-menu{
 .navegacion .submenu li.title-menu{
 	background: #fff;
 	color: #575D69;
+	font-family: Questrial;
 }
 
 .navegacion .submenu li.icon-left-open{
 	padding: 10px 20px;
-	background: #ff9d00;
+	background: black;
 	color: #fff;
 	font-size: 16px;
+	font-family: Questrial;
 }
 
 @media screen and (max-width: 320px){
@@ -101,19 +114,9 @@ header #button-menu{
 		width: 100%;
 	}
 }
-header{
-	background: #990000;	
-}
-.nav a {
-	margin-top: 0px ;
-	font-family: "GloriaHallelujah";
-	font-size: 18px;	
-	color: #ffd635;
-	text-decoration: none;
-}
 
 
-/******** USER ********/
+/***** USER ****/
 
 .name {
 	font-size: 18px;
@@ -127,20 +130,5 @@ header{
 /**** JUMBOTRON ****/
 
 .jumbotron  {
-	opacity: 0.9;
-}
-
-/********* FOOTER **********/
-
-.iconF{
-	margin-top: 6px;
-	margin-left: 25px;
-	font-size: 18px;
-	color: #fff;
-}
-footer {
-	background: #990000;
-	color: white;
-	width: 101%;
-	position: absolute;
+	font-family: Questrial;
 }

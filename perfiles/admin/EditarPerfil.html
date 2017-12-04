@@ -15,7 +15,7 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<header class="col-md-2">
+			<header class="col-2">
 				<span id="button-menu" class="icon-th-list"></span>
 
 				<nav class="navegacion">
@@ -30,7 +30,7 @@
 								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-user-1"></span>Perfil</li>
 								<li class="icon-left-open">Atras</li>
 
-								<li><a href="#">Mi Perfil</a></li>
+								<li><a href="indexAdministrador.html">Mi Perfil</a></li>
 								<li><a href="#">Editar Perfil</a></li>
 							</ul>
 						</li>
@@ -41,8 +41,8 @@
 								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-users-1"></span>Usuarios</li>
 								<li class="icon-left-open">Atras</li>
 
-								<li><a href="#">Todos los Usuarios</a></li>
-								<li><a href="#">Añadir Nuevo Usuario</a></li>
+								<li><a href="TodosLosUsuarios.html">Todos los Usuarios</a></li>
+								<li><a href="AñadirNuevoUsuario.html">Añadir Nuevo Usuario</a></li>
 							</ul>
 						</li>
 
@@ -52,7 +52,7 @@
 								<li class="title-menu"><span class="fa fa-shopping-bag icon-menu"></span><span class=" icon-award"></span>Capacitaciones</li>
 								<li class="icon-left-open">Atras</li>
 
-								<li><a href="#">Crear Capacitación</a></li>
+								<li><a href="CrearCapacitaciones.html">Crear Capacitación</a></li>
 							</ul>
 						</li>
 
@@ -62,10 +62,10 @@
 								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-globe"></span>Evento</li>
 								<li class="icon-left-open">Atras</li>
 
-								<li><a href="#">Crear Evento</a></li>
-								<li><a href="#">Asignar Evento</a></li>
-								<li><a href="#">Crear Paquete</a></li>
-								<li><a href="#">Consultar Cotizaciones</a></li>
+								<li><a href="CrearEvento.html">Crear Evento</a></li>
+								<li><a href="Asignar evento.html">Asignar Evento</a></li>
+								<li><a href="CrearPaquete.html">Crear Paquete</a></li>
+								<li><a href="Cotizaciones.html">Consultar Cotizaciones</a></li>
 							</ul>
 						</li>
 
@@ -75,8 +75,8 @@
 								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-chart-line"></span>Reportes</li>
 								<li class="icon-left-open">Atras</li>
 
-								<li><a href="#">Registro de ventas</a></li>
-								<li><a href="#">Contratos</a></li>
+								<li><a href="RegistroVentas.html">Registro de ventas</a></li>
+								<li><a href="Contratos.html">Contratos</a></li>
 								<li><a href="#">Estadisticas</a></li>
 								<li><a href="#">Observaciones</a></li>
 							</ul>
@@ -84,10 +84,10 @@
 					</ul>
 				</nav>
 			</header>
-			<header class="col-md-8 d-flex justify-content-center">
-				<img src="../admin/img/logo.png" width="100" height="35" alt="Logo New Xperience">
+			<header class="col-8 d-flex justify-content-center">
+				<img src="../admin/img/logo.png" width="120" height="40" alt="Logo New Xperience">
 			</header>
-			<header class="col-md-2 d-flex justify-content-end">
+			<header class="col-2 d-flex justify-content-end">
 				<nav class="nav salir">
 					<a href="../../inicio.html" class="icon-logout"> Salir </a>
 				</nav>
@@ -97,8 +97,8 @@
 			<main class=" main row">
 				<div class="section col-10 mt-5">
 					<div class="d-flex">
-						<div class="col-12 d-flex  justify-content-center">
-							<h3>EDITAR PERFIL</h3>
+						<div class="col-12 d-flex  justify-content-center text">
+							<h4>EDITAR PERFIL</h4>
 						</div>
 					</div>
 
@@ -110,10 +110,10 @@
 
 
 				<div class="col-12 d-flex justify-content-center">
-					<span id="fotoChange" class="btn-sm btn-primary mt-1 ml-2">
+					<span id="fotoChange" class="btn-sm mt-1 ml-2">
 						<form>
 							<div class="form-group">
-								<label><input type="file"></label>
+								<button>Cambiar foto</button>
 							</div>
 						</form>
 					</span>
@@ -127,17 +127,17 @@
 						<tr>
 							<th>NOMBRES Y APELLIDOS:</th>
 							<td>Miguel Angel Clavijo Zapata</td>
-							<td><button class="btn btn-xs btn-info edit"><i class="icon-pencil"></i></button></td>
+							<td><button class="btn btn-xs edit"><i class="icon-pencil"></i></button></td>
 						</tr>
 						<tr>
 							<th>TELÉFONO:</th>
 							<td>3465512</td>
-							<td><button class="btn btn-xs btn-info edit"><i class="icon-pencil"></i></button></td>
+							<td><button class="btn btn-xs edit"><i class="icon-pencil"></i></button></td>
 						</tr>
 						<tr>
 							<th>CELULAR:</th>
 							<td>320 234 5178</td>
-							<td><button class="btn btn-xs btn-info edit"><i class="icon-pencil"></i></button></td>
+							<td><button class="btn btn-xs edit"><i class="icon-pencil"></i></button></td>
 						</tr>
 						<tr>
 							<th>TIPO DE DOCUMENTO:</th>
@@ -150,12 +150,12 @@
 						<tr>
 							<th>N° DE DOCUMENTO:</th>
 							<td>1013234520</td>
-							<td><button class="btn btn-xs btn-info edit"><i class="icon-pencil"></i></button></td>
+							<td><button class="btn btn-xs edit"><i class="icon-pencil"></i></button></td>
 						</tr>
 						<tr>
 							<th>E-MAIL:</th>
 							<td>jsperez@gmail.com</td>
-							<td><button class="btn btn-xs btn-info edit"><i class="icon-pencil"></i></button></td>
+							<td><button class="btn btn-xs edit"><i class="icon-pencil"></i></button></td>
 						</tr>
 						<tr>
 							<th>CONTRASEÑA:</th>
@@ -172,21 +172,6 @@
 	</div>
 </br>
 </br>
-<!-- Footer -->
-
-<footer class="row">
-	<div class="col">
-		<p class="lead m-0 text-center" >320 222 11 44</p >
-	</div>
-
-	<div class="col-sm-6 col-md-8 ">
-		<p class="lead m-0 text-center" >Copyright @2017 New Xperience</p >
-	</div>
-
-	<div class="col-sm-6 col-md-2 ">
-		<a fb href="#" class="icon-facebook-squared d-inline-block iconF"></a>
-	</div>
-</footer>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/sweetalert.min.js" charset="utf-8"></script>
 <script src="js/popper.min.js"></script>

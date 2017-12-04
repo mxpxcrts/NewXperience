@@ -2,293 +2,225 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="icon" type="text/css" href="img/icono.ico">
-	<link rel="stylesheet" href="css/consultarEvento.css">
-	<link rel="stylesheet" href="font/Fontello/css/fontello.css">
-	<link rel="stylesheet" href="font/Fontello/font/fontello.ttf">
-	<title>Consultar Evento</title>
+	<link rel="stylesheet" href="css/estiloConsultarEvento.css">
+	<link rel="stylesheet" href="font/style.css">
+	<title>Consultar Eventos</title>
 	
 </head>
 <body>
-
-	<!-- SIDEBAR -->
-
 	<div class="container-fluid">
+		<!-- HEADER -->
 		<div class="row">
 			<header class="col-md-2">
 				<span id="button-menu" class="icon-th-list"></span>
+
+
+				<!-- Sidebar -->
 				<nav class="navegacion">
 					<ul class="menu">
-						<li class="title-menu">Recreador</li>
+						<!-- TITULAR -->
+						<li class="title-menu">Administrador</li>
+						<!-- TITULAR -->
+
 						<li class="item-submenu" menu="1">
 							<a href="#"><span class="icon-user-1"></span>Perfil</a>
 							<ul class="submenu">
-								<li class="title-menu"></span><span class="icon-user-1"></span>Perfil</li>
+								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-user-1"></span>Perfil</li>
 								<li class="icon-left-open">Atras</li>
-								<li><a href="index.html">Mi Perfil</a></li>
-								<li><a href="editarPerfil.html">Editar Perfil</a></li>
+
+								<li><a href="indexRecreador.html">Mi Perfil</a></li>
+								<li><a href="EditarPerfil.html">Editar Perfil</a></li>
 							</ul>
 						</li>
 
 						<li class="item-submenu" menu="2">
 							<a href="#"><span class="icon-award"></span>Capacitaciones</a>
 							<ul class="submenu">
-								<li class="title-menu"></span><span class="icon-award"></span>Capacitaciones</li>
+								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-award"></span>Capacitaciones</li>
 								<li class="icon-left-open">Atras</li>
-								<li><a href="capacitacionesAsignadas.html">Asignadas</a></li>
-								<li><a href="historialCapacitaciones.html">Historial</a></li>
-							</ul>
-						</li>
 
-						<li class="item-submenu" menu="3">
-							<a href="#"><span class=" icon-sound"></span>Eventos</a>
-							<ul class="submenu">
-								<li class="title-menu"></span><span class=" icon-sound"></span>Eventos</li>
-								<li class="icon-left-open">Atras</li>
-								<li><a href="consultarEvento.html">Consultar eventos</a></li>
+								<li><a href="CapacitacionesAsignadas.html">Asignadas</a></li>
+								<li><a href="HistorialCapacitaciones.html">Historial</a></li>
 							</ul>
 						</li>
 
 						<li class="item-submenu" menu="4">
-							<a href="#"><span class="icon-chart-bar"></span>Reportes</a>
+							<a href="#"><span class="icon-globe"></span>Eventos</a>
 							<ul class="submenu">
-								<li class="title-menu"></span><span class="icon-chart-bar"></span>Reportes</li>
+								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-globe"></span>Evento</li>
 								<li class="icon-left-open">Atras</li>
-								<li><a href="estadisticas.html">Estadísticas</a></li>
-								<li><a href="observaciones.html">Observaciones</a></li>
-								<li><a href="contrato.html">Contratos</a></li>
+								<li><a href="ConsultarEvento.html">Consultar Evento</a></li>
+							</ul>
+						</li>
+
+						<li class="item-submenu" menu="5">
+							<a href="#"><span class="icon-chart-line"></span>Reportes</a>
+							<ul class="submenu">
+								<li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-chart-line"></span>Reportes</li>
+								<li class="icon-left-open">Atras</li>
+								<li><a href="Contrato.html">Contratos</a></li>
+								<li><a href="Estadisticas.html">Estadisticas</a></li>
+								<li><a href="Observaciones.html">Observaciones</a></li>
 							</ul>
 						</li>
 					</ul>
 				</nav>
 			</header>
-			<header class="col-md-8 d-flex justify-content-center">
-				<img src="img/logo.png" width="100" height="35" alt="Logo New Xperience">
-			</header>
-			<header class="col-md-2 d-flex justify-content-end">
+			<header class="col-md-10 d-flex justify-content-end">
 				<nav class="nav salir">
 					<a href="../../inicio.html" class="icon-logout"> Salir </a>
 				</nav>
 			</header>
-		</div>
-	</div>
 
-	<!-- MAIN -->
+			<!-- Sidebar End -->
 
-	<div class="container">
-		<main class=" main row">
-			<div class="section col-10 mt-3 ml-4">
-				<div class="d-flex">
-					<div class="foto col-md-2 mt-4">
-						<img src="img/user.png" alt="user profile picture" class="userpicture">	
-					</div>
-					<div class="name col-md-5 mt-5">
-						<h3>Angel Perez Molina</h3>
-						<p>Recreador</p>
-					</div>
-					<div class="columna col-md-4">
-						<div class="widget estado">
-							<div class="contenedor d-flex flex-wrap">
-								<div class="caja">
-									<h4>154</h4>
-									<p>Eventos realizados</p>
+			<div class="container">
+				<main class="row justify-content-end">
+					<div class="section col-10 mt-5 mr-5">
+						<div class="d-flex"> 
+							<div class="col-md-2 mt-4">
+								<img src="img/user.png" alt="user profile picture" class="userpicture">	
+							</div>
+							<div class="name col-md-6 mt-5">
+								<h3>Jose Angel Perez Molina</h3>
+								<p>RECREADOR</p>
+							</div>
+							<div class="columna col-md-4">
+								<div class="widget estado">
+									<div class="contenedor d-flex flex-wrap">
+										<div class="caja">
+											<h4>154</h4>
+											<p>Eventos realizados</p>
+										</div>
+										<div class="caja">
+											<h4>22</h4>
+											<p>Eventos pendientes</p>
+										</div>
+										<div class="caja">
+											<h4>Golden</h4>
+											<p>Rango</p>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>	
+						<div class="col-6">
+							<h4 class="tittleCapacitaciones mt-5 mb-4 ml-5">Eventos Asignados</h4>
+							
+							<div class="menuAcordeon ml-3">
+								<div class="titulo">
+									<p class="titulo">Viejotecta</p>
 								</div>
-								<div class="caja">
-									<h4>22</h4>
-									<p>Eventos pendientes</p>
+								<div class="info">
+									<table class="table datosCapacitación table-inverse bg-info table-responsive">
+										<tr>
+											<th scope="col">LUGAR</th>
+											<td> Calle 63 no. 17- 68 </td>
+										</tr>
+										<tr>
+											<th scope="col">FECHA</th>
+											<td> 12-12-2017 </td>
+										</tr>
+										<tr>
+											<th scope="col">HORA</th>
+											<td> 9:00 pm </td>
+										</tr>
+									</table>
+									<button class="btn btn-sm btn-primary popup_massage data-container="body" data-placement="right" data-toggle="popover" data-content="Recuerden estar 30 minutos antes del evento. Los elementos se les darán un día antes" data-trigger="hover">Especificaciones</button>
 								</div>
-								<div class="caja">
-									<h4>Golden</h4>
-									<p>Rango</p>
+							</div>
+
+							<div class="menuAcordeon ml-3">
+								<div class="titulo">
+									<p class="titulo">Babyshower</p>
+								</div>
+								<div class="info">
+									<table class="table datosCapacitación table-inverse bg-info table-responsive">
+										<tr>
+											<th scope="col">LUGAR</th>
+											<td> calle 26 # 25-50 </td>
+										</tr>
+										<tr>
+											<th scope="col">FECHA</th>
+											<td> 22-03-2018 </td>
+										</tr>
+										<tr>
+											<th scope="col">HORA</th>
+											<td> 2:30 pm </td>
+										</tr>
+									</table>
+									<button class="btn btn-sm btn-primary data-container="body" data-placement="right" data-toggle="popover" data-content="Detalles del evento" data-trigger="hover">Especificaciones</button>
+								</div>
+							</div>
+
+							<div class="menuAcordeon ml-3">
+								<div class="titulo">
+									<p class="titulo">15 años</p>
+								</div>
+								<div class="info">
+									<table class="table datosCapacitación table-inverse bg-info table-responsive">
+										<tr>
+											<th scope="col">LUGAR</th>
+											<td> calle 13 # 65-21 </td>
+										</tr>
+										<tr>
+											<th scope="col">FECHA</th>
+											<td> 10-04-2018 </td>
+										</tr>
+										<tr>
+											<th scope="col">HORA</th>
+											<td> 7:00 pm </td>
+										</tr>
+									</table>
+									<button class="btn btn-sm btn-primary data-container="body" data-placement="right" data-toggle="popover" data-content="Detalles del evento" data-trigger="hover">Especificaciones</button>
+								</div>
+							</div>
+
+							<div class="menuAcordeon ml-3">
+								<div class="titulo">
+									<p class="titulo">Mega rumba</p>
+								</div>
+								<div class="info">
+									<table class="table datosCapacitación table-inverse bg-info table-responsive">
+										<tr>
+											<th scope="col">LUGAR</th>
+											<td> Cra. 69 #828 Salon comunal Marsella </td>
+										</tr>
+										<tr>
+											<th scope="col">FECHA</th>
+											<td> 16-06-2018 </td>
+										</tr>
+										<tr>
+											<th scope="col">HORA</th>
+											<td> 9:00 pm </td>
+										</tr>
+									</table>
+									<button class="btn btn-sm btn-primary data-container="body" data-placement="right" data-toggle="popover" data-content="Detalles del evento" data-trigger="hover">Especificaciones</button>
 								</div>
 							</div>
 						</div>	
-					</div>
-				</div>
 
-				<div class="row mt-4 ml-5">
-					<div class="col-5">
-						<div class="card border-primary  mb-3">
-							<div class="card-header bg-info">Mega Rumba</div>
-							<div class="card-body text-primary">
-								<table class="table table-responsive table-hover">
-									<tr>
-										<th scope="col">LUGAR</th>
-										<td> Calle 63 no. 17- 68 </td>
-									</tr>
-									<tr>
-										<th scope="col">FECHA</th>
-										<td> 12-12-2017 </td>
-									</tr>
-									<tr>
-										<th scope="col">HORA</th>
-										<td> 9:00 pm </td>
-									</tr>
-								</table>
-							</div>
-							<div class="card-footer bg-transparent border-primary">
-								<button class="btn btn btn-outline-info btn-sm" data-toggle="modal" data-target="#detalle-modal">Especificaciones</button>
-								<div class="modal fade" id="detalle-modal" tabindex="-1" role="dialog" aria-labelledby="detalle-modal" aria-hidden="true">
-									<div class="modal-dialog">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="">Especificaciones del evento</h5>
-												<button class="close" data-dismiss="modal" aria-label="Cerrar">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<p>Recuerden estar 30 minutos antes del evento. Los elementos que necesiten se les darán un día antes.</p>
-											</div>
-										</div>
-									</div>
-								</div>	   	
-							</div>
+						<div class="col-8">
+							
 						</div>
-					</div>
-					<div class="col-5">
-						<div class="card border-primary  mb-3">
-							<div class="card-header bg-info">Baby Shower</div>
-							<div class="card-body text-primary">
-								<table class="table table-responsive table-hover">
-									<tr>
-										<th scope="col">LUGAR</th>
-										<td> Calle 26 # 25-50 </td>
-									</tr>
-									<tr>
-										<th scope="col">FECHA</th>
-										<td> 22-03-2018 </td>
-									</tr>
-									<tr>
-										<th scope="col">HORA</th>
-										<td> 2:30 pm </td>
-									</tr>
-								</table>
-							</div>
-							<div class="card-footer bg-transparent border-primary">
-								<button class="btn btn btn-outline-info btn-sm" data-toggle="modal" data-target="#detalle-modal">Especificaciones</button>
-								<div class="modal fade" id="detalle-modal" tabindex="-1" role="dialog" aria-labelledby="detalle-modal" aria-hidden="true">
-									<div class="modal-dialog">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="">Especificaciones del evento</h5>
-												<button class="close" data-dismiss="modal" aria-label="Cerrar">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<p>Recuerden estar 30 minutos antes del evento. Los elementos que necesiten se les darán un día antes.</p>
-											</div>
-										</div>
-									</div>
-								</div>	   	
-							</div>
-						</div>
-					</div>	
-					<div class="col-5">
-						<div class="card border-primary  mb-3">
-							<div class="card-header bg-info">15 años</div>
-							<div class="card-body text-primary">
-								<table class="table table-responsive table-hover">
-									<tr>
-										<th scope="col">LUGAR</th>
-										<td> Calle 13 # 65-21 </td>
-									</tr>
-									<tr>
-										<th scope="col">FECHA</th>
-										<td> 10-04-2018 </td>
-									</tr>
-									<tr>
-										<th scope="col">HORA</th>
-										<td> 7:00 pm </td>
-									</tr>
-								</table>
-							</div>
-							<div class="card-footer bg-transparent border-primary">
-								<button class="btn btn btn-outline-info btn-sm" data-toggle="modal" data-target="#detalle-modal">Especificaciones</button>
-								<div class="modal fade" id="detalle-modal" tabindex="-1" role="dialog" aria-labelledby="detalle-modal" aria-hidden="true">
-									<div class="modal-dialog">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="">Especificaciones del evento</h5>
-												<button class="close" data-dismiss="modal" aria-label="Cerrar">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<p>Recuerden estar 30 minutos antes del evento. Los elementos que necesiten se les darán un día antes.</p>
-											</div>
-										</div>
-									</div>
-								</div>	   	
-							</div>
-						</div>
-					</div>
-					<div class="col-5">
-						<div class="card border-primary  mb-3">
-							<div class="card-header bg-info">Mega Rumba</div>
-							<div class="card-body text-primary">
-								<table class="table table-responsive table-hover">
-									<tr>
-										<th scope="col">LUGAR</th>
-										<td> Salon comunal Marsella </td>
-									</tr>
-									<tr>
-										<th scope="col">FECHA</th>
-										<td> 16-06-2018 </td>
-									</tr>
-									<tr>
-										<th scope="col">HORA</th>
-										<td> 9:00 pm </td>
-									</tr>
-								</table>
-							</div>
-							<div class="card-footer bg-transparent border-primary">
-								<button class="btn btn btn-outline-info btn-sm" data-toggle="modal" data-target="#detalle-modal">Especificaciones</button>
-								<div class="modal fade" id="detalle-modal" tabindex="-1" role="dialog" aria-labelledby="detalle-modal" aria-hidden="true">
-									<div class="modal-dialog">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="">Especificaciones del evento</h5>
-												<button class="close" data-dismiss="modal" aria-label="Cerrar">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<p>Recuerden estar 30 minutos antes del evento. Los elementos que necesiten se les darán un día antes.</p>
-											</div>
-										</div>
-									</div>
-								</div>	   	
-							</div>
-						</div>
-					</div>
-				</div>							
-			</div>
-		</main>
+						
+					</div>					
+				</div>					
+			</main>
+		</div>
 	</div>
+</div>
+</div>
 
-	<!-- FOOTER -->
 
-	<footer class="row">
-		<div class="col">
-			<p class="lead m-0 text-center" >320 222 11 44</p >
-		</div>
-
-		<div class="col-sm-6 col-md-8 ">
-			<p class="lead m-0 text-center" >Copyright @2017 New Xperience</p >
-		</div>
-
-		<div class="col-sm-6 col-md-2 ">
-			<a fb href="#" class="icon-facebook-squared d-inline-block iconF"></a>
-		</div>
-	</footer>
-
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>	
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>	
+<script src="js/popovers.js"></script>
+<script src="js/consultarEvento.js"></script>
 </body>
 </html>

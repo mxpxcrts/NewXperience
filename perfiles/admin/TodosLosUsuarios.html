@@ -30,8 +30,8 @@
           <li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-user-1"></span>Perfil</li>
           <li class="icon-left-open">Atras</li>
 
-          <li><a href="#">Mi Perfil</a></li>
-          <li><a href="#">Editar Perfil</a></li>
+          <li><a href="indexAdministrador.html">Mi Perfil</a></li>
+          <li><a href="EditarPerfil.html">Editar Perfil</a></li>
         </ul>
       </li>
 
@@ -42,7 +42,7 @@
         <li class="icon-left-open">Atras</li>
 
         <li><a href="#">Todos los Usuarios</a></li>
-        <li><a href="#">Añadir Nuevo Usuario</a></li>
+        <li><a href="AñadirNuevoUsuario.html">Añadir Nuevo Usuario</a></li>
       </ul>
     </li>
 
@@ -52,7 +52,7 @@
       <li class="title-menu"><span class="fa fa-shopping-bag icon-menu"></span><span class=" icon-award"></span>Capacitaciones</li>
       <li class="icon-left-open">Atras</li>
 
-      <li><a href="#">Crear Capacitación</a></li>
+      <li><a href="CrearCapacitaciones.html">Crear Capacitación</a></li>
     </ul>
   </li>
 
@@ -62,10 +62,10 @@
     <li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-globe"></span>Evento</li>
     <li class="icon-left-open">Atras</li>
 
-    <li><a href="#">Crear Evento</a></li>
-    <li><a href="#">Asignar Evento</a></li>
-    <li><a href="#">Crear Paquete</a></li>
-    <li><a href="#">Consultar Cotizaciones</a></li>
+    <li><a href="CrearEvento.html">Crear Evento</a></li>
+    <li><a href="Asignar evento.html">Asignar Evento</a></li>
+    <li><a href="CrearPaquete.html">Crear Paquete</a></li>
+    <li><a href="Cotizaciones.html">Consultar Cotizaciones</a></li>
   </ul>
 </li>
 
@@ -75,8 +75,8 @@
   <li class="title-menu"><span class="fa fa-suitcase icon-menu"></span><span class="icon-chart-line"></span>Reportes</li>
   <li class="icon-left-open">Atras</li>
 
-  <li><a href="#">Registro de ventas</a></li>
-  <li><a href="#">Contratos</a></li>
+  <li><a href="RegistroVentas.html">Registro de ventas</a></li>
+  <li><a href="Contratos.html">Contratos</a></li>
   <li><a href="#">Estadisticas</a></li>
   <li><a href="#">Observaciones</a></li>
 </ul>
@@ -97,16 +97,16 @@
 	<main class="main row">
 		<div class="section col-10 mt-5">
 			<div class="d-flex">
-				<div class="col-12 d-flex  justify-content-center">
-          <h3>Todos los Usuarios</h3>
+				<div class="col-12 d-flex  justify-content-center text">
+          <h2>Todos los Usuarios</h2>
         </div>
       </br>
     </br>
   </div>
 </div>
 <div class="col-md-10 d-flex justify-content-center">
-  <table class="table table-bordered" id="table">
-    <thead>
+  <table class="table table-bordered table-hover table-responsive" id="table">
+    <thead class="">
       <th>N° contrato</th>
       <th>Nombre y apellidos</th>
       <th>N° identificacion</th>
@@ -122,7 +122,7 @@
         <td>Recreador</td>
         <td>Activo</td>
         <td>
-          <button class="btn btn-xs btn-info edit">
+          <button class="btn btn-xs  edit">
             <i class=" icon-pencil"></i>
           </button>
           <button class="btn btn-xs delete">
@@ -137,7 +137,7 @@
         <td>Recreador</td>
         <td>Activo</td>
         <td>
-          <button class="btn btn-xs btn-info edit">
+          <button class="btn btn-xs  edit">
             <i class=" icon-pencil"></i>
           </button>
           <button class="btn btn-xs delete">
@@ -152,7 +152,7 @@
         <td>Recreador</td>
         <td>Activo</td>
         <td>
-          <button class="btn btn-xs btn-info edit">
+          <button class="btn btn-xs  edit">
             <i class=" icon-pencil"></i>
           </button>
           <button class="btn btn-xs delete">
@@ -167,7 +167,7 @@
         <td>Recreador</td>
         <td>Activo</td>
         <td>
-          <button class="btn btn-xs btn-info edit">
+          <button class="btn btn-xs  edit">
             <i class=" icon-pencil"></i>
           </button>
           <button class="btn btn-xs delete">
@@ -182,7 +182,7 @@
         <td>Recreador</td>
         <td>Activo</td>
         <td>
-          <button class="btn btn-xs btn-info edit">
+          <button class="btn btn-xs  edit">
             <i class=" icon-pencil"></i>
           </button>
           <button class="btn btn-xs delete">
@@ -197,7 +197,7 @@
         <td>Cliente</td>
         <td>Activo</td>
         <td>
-          <button class="btn btn-xs btn-info edit">
+          <button class="btn btn-xs  edit">
             <i class=" icon-pencil"></i>
           </button>
           <button class="btn btn-xs delete">
@@ -212,7 +212,7 @@
         <td>Clente</td>
         <td>Inactivo</td>
         <td>
-          <button class="btn btn-xs btn-info edit">
+          <button class="btn btn-xs  edit">
             <i class=" icon-pencil"></i>
           </button>
           <button class="btn btn-xs delete">
@@ -227,7 +227,7 @@
         <td>Cliente</td>
         <td>Activo</td>
         <td>
-          <button class="btn btn-xs btn-info edit">
+          <button class="btn btn-xs edit">
             <i class=" icon-pencil"></i>
           </button>
           <button class="btn btn-xs delete">
@@ -242,7 +242,7 @@
         <td>Cliente</td>
         <td>Inactivo</td>
         <td>
-          <button class="btn btn-xs btn-info edit">
+          <button class="btn btn-xs  edit">
             <i class=" icon-pencil"></i>
           </button>
           <button class="btn btn-xs delete">
@@ -257,7 +257,7 @@
         <td>Cliente</td>
         <td>Activo</td>
         <td>
-          <button class="btn btn-xs btn-info edit">
+          <button class="btn btn-xs  edit">
             <i class=" icon-pencil"></i>
           </button>
           <button class="btn btn-xs delete">
@@ -272,21 +272,6 @@
 </div>
 </br>
 </br>
-<!-- Footer -->
-
-<footer class="row">
-  <div class="col">
-   <p class="lead m-0 text-center" >320 222 11 44</p >
- </div>
-
- <div class="col-sm-6 col-md-8 ">
-   <p class="lead m-0 text-center" >Copyright @2017 New Xperience</p >
- </div>
-
- <div class="col-sm-6 col-md-2 ">
-   <a fb href="#" class="icon-facebook-squared d-inline-block iconF"></a>
- </div>
-</footer>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/sweetalert.min.js" charset="utf-8"></script>
 <script src="js/popper.min.js"></script>

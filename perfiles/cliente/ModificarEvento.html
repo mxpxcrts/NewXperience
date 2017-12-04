@@ -48,17 +48,14 @@
 							<ul class="submenu">
 								<li class="title-menu"></span><span class="icon-chart-bar"></span>Reportes</li>
 								<li class="icon-left-open">Atras</li>
-								<li><a href="calificarEvento.html">Calificar Evento</a></li>
+								<li><a href="calificarEvento.html">Observaciones</a></li>
 								<li><a href="contrato.html">Contratos</a></li>
 							</ul>
 						</li>
 					</ul>
 				</nav>
 			</header>
-			<header class="col-md-8 d-flex justify-content-center">
-				<img src="img/logo.png" width="100" height="35" alt="Logo New Xperience">
-			</header>
-			<header class="col-md-2 d-flex justify-content-end">
+			<header class="col-md-10 d-flex justify-content-end">
 				<nav class="nav salir">
 					<a href="../../inicio.html" class="icon-logout"> Salir </a>
 				</nav>
@@ -77,7 +74,7 @@
 					</div>
 					<div class="name col-4 mb-5">
 						<h3>María Paula Cortés</h3>
-						<p>Recreador</p>
+						<p>Cliente</p>
 					</div>
 					<div class="columna col-md-4">
 						<div class="widget estado">
@@ -97,22 +94,30 @@
 
 				<div class="col-11 ml-5">
 					<h4 class="tittleObservaciones mt-5 ml-5 mb-4">MODIFICAR EVENTO</h4>
-					<table class="table observaciones table-hover table-primary table-responsive">
+					<table class="table observaciones table-hover table-light table-bordered table-responsive" id="table">
 						<thead>
 							<tr>
-								<th>Evento</th>
-								<th>Lugar</th>
-								<th>Fecha</th>
-								<th>Detalle</th>
+								<th id="title">Evento</th>
+								<th id="title">Lugar</th>
+								<th id="title">Fecha</th>
+								<th id="title">Detalle</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
+								<td>Fiesta Infantil</td>
+								<td>Calle 26 # 15-72</td>
+								<td>06/09/2017</td>
+								<td>
+									<button class="btn btn-disabled btn-sm">Modificar</button>
+								</td>
+							</tr>
+							<tr>
 								<td>Mega Rumba</td>
 								<td>Calle 13 # 65-21</td>
-								<td>16/04/2017</td>
+								<td>16/12/2017</td>
 								<td>
-									<button class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#detalle-modal">Modificar</button>
+									<button class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#detalle-modal">Modificar</button>
 									<div class="modal fade" id="detalle-modal" tabindex="-1" role="dialog" aria-labelledby="detalle-modal" aria-hidden="true">
 										<div class="modal-dialog">
 											<div class="modal-content">
@@ -193,9 +198,9 @@
 							<tr>
 								<td>Baby Shower</td>
 								<td>Calle 52 # 12-21</td>
-								<td>22/05/2017</td>
+								<td>22/01/2018</td>
 								<td>
-									<button class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#detalle2-modal">Modificar</button>
+									<button class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#detalle2-modal">Modificar</button>
 									<div class="modal fade" id="detalle2-modal" tabindex="-1" role="dialog" aria-labelledby="detalle2-modal" aria-hidden="true">
 										<div class="modal-dialog">
 											<div class="modal-content">
@@ -205,6 +210,7 @@
 														<span aria-hidden="true">&times;</span>
 													</button>
 												</div>
+
 
 												<div class="modal-body">
 													<div class="form-row ">
@@ -262,10 +268,12 @@
 																<option value="sonido">Sonido</option>
 															</select>
 														</div>
+
 														<div class="form-group col-12">
 															<p>Se dará respuesta a su solicitud en la mayor brevedad posible.</p>
 															<button class="btn btn-success btn-sm btn-block">Enviar</button>
 														</div>
+
 													</div>
 												</div>
 											</div>
@@ -278,22 +286,6 @@
 				</div>
 			</main>
 		</div>
-
-		<!-- FOOTER -->
-
-		<footer class="row fixed-bottom">
-			<div class="col">
-				<p class="lead m-0 text-center" >320 222 11 44</p >
-			</div>
-
-			<div class="col-sm-6 col-md-8 ">
-				<p class="lead m-0 text-center" >Copyright @2017 New Xperience</p >
-			</div>
-
-			<div class="col-sm-6 col-md-2 ">
-				<a fb href="#" class="icon-facebook-squared d-inline-block iconF"></a>
-			</div>
-		</footer>
 
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/popper.min.js"></script>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/formValidation.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/sweetalert2.min.css">
+	<link rel="stylesheet" href="css/fontello.css"/>
+	<link rel="stylesheet" href="css/estilosIniciarSesion.css">
+</head>
+<body>
+
+	<main class="container">
+		<div class="row justify-content-center align-items-center"> 
+			<div class="col-5">
+
+				<div id="formularios" class="p-3">
+
+					<div class="toggle text-center ml-auto mb-3">
+						<span class="botonCambio">Registrarse</span>
+					</div>
+					
+					<div class="formulariosInicio mt-2 " id="formulariosInicio">
+						<form id="form1" class="p-3"  action="" method="post" >
+							<h2 class="mb-3">Iniciar Sesión</h2>
+							<div class="form-group">
+								<input type="text" class="form-control" id="username" name="username" placeholder="Username" required />
+							</div>
+
+							<div class="form-group">
+								<input type="password" class="form-control" id="password" 
+								name="password" placeholder="Password" rquiered/>
+							</div>
+
+							<!-- Do NOT use name="submit" or id="submit" for the Submit button -->
+							<button type="submit" class="btn  w-100 p-2">Iniciar</button>
+						</form>
+					</div>
+					
+					<div class="formulariosInicio p-3">
+						<form id="form2">
+							<h2>Registrarse</h2>
+
+							<div class="form-row">
+
+								<div class="form-group col-md-6">
+									<label for="nombres">Nombres</label>
+									<input type="text" class="form-control" id="nombres" placeholder="Julian Mauricio">
+								</div>
+
+								<div class="form-group col-md-6">
+									<label for="apellidos">Apellidos</label>
+									<input type="password" class="form-control" id="apellidos" placeholder="Toledo Gutierrez">
+								</div>
+							</div>
+
+							<div class="form-row ">
+								<div class="form-group col-md-6 ">
+									<label for="telefono">Teléfono:</label>
+									<input type="text" class="form-control" placeholder="Teléfono" required="" name="telefono" id="telefono">
+								</div>
+								<div class="form-group col-md-6">
+									<label for="celular">Celular:</label>
+									<input type="text" class="form-control" placeholder="Celular"  name="celular" id="celular">
+								</div>
+							</div>
+
+							<div class="form-row ">
+								<div class="form-group col-md-6 ">
+									<label for="sexo">Sexo</label>
+									<select name="sexo" id="sexo" class="form-control" required="" name="sexo">
+										<option value="Hombre">Hombre</option>
+										<option value="Mujer">Mujer</option>
+									</select>
+								</div>
+
+								<div class="form-group col-md-6">
+									<label for="tipoPerfil">Tipo de Perfil</label>
+									<select name="tipoPerfil" id="tipoPerfil" class="form-control" required="" name="tipoPerfil">
+										<option value="Cliente">Cliente</option>
+										<option value="Recreador">Recreador</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-row ">
+								<div class="form-group col-md-6">
+									<label for="documentoTipo">Tipo de Documento</label>
+									<select name="documentoTipo" id="documentoTipo" class="form-control" required="" name="documentoTipo">
+										<option value="C.C">C.C</option>
+										<option value="T.I">T.I</option>
+										<option value="C.E">C.E</option>
+									</select>
+								</div>
+
+								<div class="form-group col-md-6 ">
+									<label for="">Número de Documento:</label>
+									<input type="text" class="form-control" placeholder="Número de Documento" required="" name="Ndocumento" id="Ndocumento">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="email">Correo electrónico:</label>
+								<input type="email" class="form-control" placeholder="Correo electrónico" required="" name="email" id="email">
+							</div>
+							<div class="form-group">
+								<label for="contraseña">Contraseña:</label>
+								<input type="password" class="form-control" placeholder="Contraseña (máx 20 caracteres)" required="" name="contraseña" id="contraseña"> 
+							</div>
+							<div class="form-group">
+								<label for="contraseña2">Confirmar contraseña:</label>
+								<input type="password" class="form-control" placeholder="Confirmar contraseña (máx 20 caracteres)" required="" name="contraseña2" id="contraseña2">
+							</div>
+
+							<button type="submit" class="btn  w-100 p-2">Registrarse</button>
+						</form>
+
+					</div>
+						<div id="recuperarContra" class="w-100 text-center p-2">
+							<a href="#">Olvide mi contraseña</a>
+						</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/sweetalert2.min.js"></script>
+	<script src="js/formValidation.min.js"></script>
+	<script src="js/bootstrap4.min.js"></script>
+	<script src="js/inciarSesion.js"></script>
+</body>
+</html>
+

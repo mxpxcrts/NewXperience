@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="font/Fontello/css/fontello.css">
 	<link rel="stylesheet" href="font/Fontello/font/fontello.ttf">
 	<link rel="stylesheet" href="css/starrr.css">
-	<title>Calificar Evento</title>
+	<title>Observaciones</title>
 	
 </head>
 <body>
@@ -49,17 +49,14 @@
 							<ul class="submenu">
 								<li class="title-menu"></span><span class="icon-chart-bar"></span>Reportes</li>
 								<li class="icon-left-open">Atras</li>
-								<li><a href="calificarEvento.html">Calificar Evento</a></li>
+								<li><a href="calificarEvento.html">Observaciones</a></li>
 								<li><a href="contrato.html">Contratos</a></li>
 							</ul>
 						</li>
 					</ul>
 				</nav>
 			</header>
-			<header class="col-md-8 d-flex justify-content-center">
-				<img src="img/logo.png" width="100" height="35" alt="Logo New Xperience">
-			</header>
-			<header class="col-md-2 d-flex justify-content-end">
+			<header class="col-md-10 d-flex justify-content-end">
 				<nav class="nav salir">
 					<a href="../../inicio.html" class="icon-logout"> Salir </a>
 				</nav>
@@ -78,7 +75,7 @@
 					</div>
 					<div class="name col-4 mb-5">
 						<h3>María Paula Cortés</h3>
-						<p>Recreador</p>
+						<p>Cliente</p>
 					</div>
 					<div class="columna col-md-4">
 						<div class="widget estado">
@@ -97,14 +94,14 @@
 				</div>
 
 				<div class="col-11 ml-5">
-					<h4 class="tittleObservaciones mt-5 ml-5 mb-4">MODIFICAR EVENTO</h4>
-					<table class="table observaciones table-hover table-primary table-responsive">
+					<h4 class="mt-5 ml-5 mb-4">OBSERVACIONES DE EVENTOS</h4>
+					<table class="table table-hover table-light table-bordered table-responsive" id="table">
 						<thead>
 							<tr>
-								<th>Evento</th>
-								<th>Fecha</th>
-								<th>Recreadores</th>
-								<th>Comentarios</th>
+								<th id="title">Evento</th>
+								<th id="title">Fecha</th>
+								<th id="title">Recreadores</th>
+								<th id="title">Comentarios</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -113,7 +110,7 @@
 								<td>16/04/2017</td>
 								<td>Daniel Contreras, Ángel Perez, Luisa Ochoa, Tatiana Ortiz</td>
 								<td>
-									<button class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#detalle-modal">Comentar</button>
+									<button class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#detalle-modal">Comentar</button>
 									<div class="modal fade" id="detalle-modal" tabindex="-1" role="dialog" aria-labelledby="detalle-modal" aria-hidden="true">
 										<div class="modal-dialog">
 											<div class="modal-content">
@@ -150,7 +147,7 @@
 							<td>12/06/2017</td>
 							<td>Tatiana Joya, Fernando Ortiz</td>
 							<td>
-								<button class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#detalle2-modal">Comentar</button>
+								<button class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#detalle2-modal">Comentar</button>
 								<div class="modal fade" id="detalle2-modal" tabindex="-1" role="dialog" aria-labelledby="detalle2-modal" aria-hidden="true">
 									<div class="modal-dialog">
 										<div class="modal-content">
@@ -187,35 +184,10 @@
 		</main>
 	</div>
 
-	<!-- FOOTER -->
-
-	<footer class="row fixed-bottom">
-		<div class="col">
-			<p class="lead m-0 text-center" >320 222 11 44</p >
-		</div>
-
-		<div class="col-sm-6 col-md-8 ">
-			<p class="lead m-0 text-center" >Copyright @2017 New Xperience</p >
-		</div>
-
-		<div class="col-sm-6 col-md-2 ">
-			<a fb href="#" class="icon-facebook-squared d-inline-block iconF"></a>
-		</div>
-	</footer>
-
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>	
 	<script src="js/main.js"></script>
-	<script src="js/starrr.js"></script>
-	<script>
-		$('#Estrellas').starrr({
-			rating:3,
-			change:function(e,valor){
-				alert(valor);      
-			}
-		});
-	</script>
 
 </body>
 </html>

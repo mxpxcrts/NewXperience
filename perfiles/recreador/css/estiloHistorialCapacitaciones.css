@@ -1,0 +1,147 @@
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+@font-face {
+	font-family: "Questrial";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../font/Questrial-Regular.ttf);
+}
+body{
+	background:url(../img/Fondo4.jpg) no-repeat fixed center center;
+	background-size: cover; 
+}
+
+/**** SCROLL PERSONALIZADO ****/
+
+body::-webkit-scrollbar {
+	width: 10px;
+	background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #C30F51;
+	border-radius: 10px;
+	border-right: 2px solid #C30F51;
+}
+
+/******** SIDERBAR **********/
+
+header{
+	background: #AF0E49;
+}
+.nav a {
+	margin-top: 0px ;
+	font-size: 18px;	
+	color: white;
+	text-decoration: none;
+	font-family: Questrial;
+}
+header #button-menu{
+	font-size: 20px;
+	color: #fff;
+}
+
+.navegacion{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	height: 100vh;
+	background: rgba(0,0,0,.0);
+	opacity: 0.8;
+}
+
+.navegacion ul{
+	width: 195px;
+	height: 100%;
+	background: #fff;
+	list-style: none;
+	position: absolute;
+	top: 0;
+	left: -320px;
+	transition: left .3s;
+}
+
+.navegacion .menu li.title-menu{
+	padding: 20px;
+	background: black;
+	color: #C30F51;
+	text-align: center;
+	font-size: 22px;
+	text-shadow: 2px 3px 10px #C30F51;
+}
+
+.navegacion .menu a{
+	display: block;
+	padding: 20px;
+	border-bottom: 1px solid #C6D0DA;
+	font-size: 16px;
+	text-decoration: none;
+	color: black;
+	font-family: Questrial;
+}
+
+.navegacion .menu a:hover{
+	background: black;
+	color: #C30F51;
+	font-family: Questrial;
+}
+
+/****** SUBMENÚ *****/
+
+.navegacion .submenu li.title-menu{
+	background: #fff;
+	color: #575D69;
+	font-family: Questrial;
+}
+
+.navegacion .submenu li.icon-left-open{
+	padding: 10px 20px;
+	background: black;
+	color: #fff;
+	font-size: 16px;
+	font-family: Questrial;}
+
+@media screen and (max-width: 320px){
+	.navegacion ul{
+		width: 100%;
+	}
+}
+
+/* SiderBar end */
+
+
+/* --- Widget Estado --- */
+.name {
+	font-size: 18px;
+}
+
+.userpicture {
+	width: 120px;
+	height: 120px;
+}
+
+.caja {
+	background: #fff;
+	border: 1px solid #e3e3e3;
+	padding: 16px 20px;
+	flex: 1;
+	text-align: center;
+}
+.caja h4 {
+	margin-bottom: 2px;
+	color: #173b9e;
+}
+.caja p {
+	color: #a8a8a8;
+	margin-bottom: 0;
+}
+
+#cajaBuscar{
+	width: 20%;
+}
+.container{
+	font-family: 'Questrial';
+}
